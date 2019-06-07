@@ -1,0 +1,35 @@
+.usersList {
+    margin-top: 42px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-left: 50px;
+}
+
+.UserListContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*выравнивание кнопки*/
+.alt5Button {
+    display: flex;
+    margin: -53px auto 0;
+}
+
+
+
+@media (min-width: 320px) and (max-width: 980px) {
+    .usersList {
+        margin-top: 24px;
+        padding: 0 35px;
+        justify-content: space-between;
+    }
+
+    .alt5Button {
+
+        margin: 0 auto 0;
+    }
+}

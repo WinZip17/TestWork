@@ -1,0 +1,102 @@
+.user {
+    width: 320px;
+    height: 220px;
+}
+
+.shell {
+    display: flex;
+    flex-direction: row;
+}
+
+.avatarShell {
+    width: 70px;
+    height: 100%;
+}
+
+.avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+}
+
+.username {
+    margin-top: 25px;
+    margin-left: 5px;
+    font-family: 'Overpass', sans-serif;
+    font-size: 17pt;
+    font-weight: bold;
+    letter-spacing: -0.02ex;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.specialty {
+    margin-top: 9px;
+    margin-left: 6px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 11pt;
+    letter-spacing: -0.035ex;
+    line-height: 1.2;
+}
+
+.mail {
+    margin-top: 2px;
+    margin-left: 6px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 11pt;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    letter-spacing: -0.035ex;
+}
+
+.phone {
+    margin-top: 2px;
+    margin-left: 6px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 10.7pt;
+    letter-spacing: -0.01ex;
+}
+
+
+@media (min-width: 320px) and (max-width: 980px) {
+    .user {
+        width: 200px;
+        height: 220px;
+        margin-bottom: 7px;
+    }
+
+    .shell {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .avatarShell {
+        margin: 0 auto;
+        width: 70px;
+        height: 100%;
+    }
+
+    .content {
+        text-align: center;
+    }
+
+    .username {
+        margin-top: 10px;
+    }
+
+    .specialty {
+        margin-top: 5px;
+    }
+
+    .mail {
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,50 @@
+
+.backgroundAlt5 {
+    display: flex;
+    margin: 0 auto;
+    width: 1024px;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.alt5 {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.headers5 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    margin-top: 137px;
+}
+
+.headers5 > h1 {
+    width: 100%;
+    font-size: 263%;
+    margin: 0;
+}
+
+.headers5 > h2 {
+    width: 100%;
+    font-size: 115%;
+    letter-spacing: -0.07ex;
+}
+
+@media (min-width: 320px) and (max-width: 980px) {
+    .backgroundAlt5 {
+        width: 768px;
+    }
+
+    .headers5 {
+        margin-top: 116px;
+    }
+
+    .headers5 > h2 {
+        margin-top: 17px;
+        letter-spacing: -0.09ex;
+    }
+}
+
+

@@ -1,0 +1,144 @@
+/*отображение шапки и ее содержимого*/
+
+header {
+    font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    width: 1024px;
+    height: 62px;
+    position: fixed;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #ffffff;
+    z-index: 200;
+}
+
+header [type="checkbox"] {
+    display: none;
+}
+
+.logoSell {
+    width: 133px;
+    margin-left: 48px;
+}
+.logo {
+    margin-top: 5px;
+    width: 133px;
+    height: 25px;
+}
+
+menu {
+    display: flex;
+    justify-content: flex-start;
+    padding-inline-start: 0;
+    width: 460px;
+    margin-top: 15px;
+    margin-left: 67px;
+}
+
+.menuItem {
+    display: flex;
+    font-size: 12pt;
+    margin-right: 29px
+}
+
+.menuItem a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.menuItem a:hover {
+    color: #ef6c00;
+}
+menu > li:nth-child(5) {
+    margin-right: 0;
+}
+
+.lineMenu {
+    display: none;
+    cursor: pointer;
+}
+
+.tabletBlockMenu{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.fon {
+    display: none;
+    position: fixed;
+    background-color: #000000;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 205;
+    opacity: 0.7;
+}
+.itemSingOut {
+    display: none;
+}
+
+
+@media all and (max-width: 980px) {
+
+    .lineMenu {
+        display: block;
+        margin-top: 1px;
+        margin-right: 23px;
+        z-index: 207;
+    }
+
+    .toggleMenu {
+        z-index: 207;
+    }
+
+    .logoSell {
+        margin-left: 24px;
+    }
+    header {
+        justify-content:space-between;
+        width: 768px;
+    }
+
+    menu {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        margin-left: 20px;
+    }
+
+    .tabletBlockMenu{
+        display: none;
+    }
+
+    input.toggleMenu:checked ~ .fon {
+        display: block;
+    }
+    input.toggleMenu:checked ~ .tabletBlockMenu {
+        position: absolute;
+        display: flex;
+        flex-direction: column-reverse;
+        z-index: 206;
+        background-color: white;
+        top: 0;
+        left: 0px;
+        min-height: 100vh;
+        align-content: stretch;
+
+    }
+
+    .menuItem {
+        margin-bottom: 20px;
+    }
+
+    .tabletMenu {
+        display: block;
+        height: 200px;
+        min-height: 85vh;
+    }
+
+    .itemSingOut {
+        display: block;
+    }
+}

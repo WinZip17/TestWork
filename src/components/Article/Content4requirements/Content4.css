@@ -1,0 +1,107 @@
+.backgroundAlt4 {
+    display: flex;
+    margin: 0 auto;
+    height: 755px;
+    width: 1024px;
+    padding: 0;
+    background: url(../../media/imgs/bg-2_desktop.jpg) no-repeat;
+    background-size: 112% 104%;
+    background-origin: border-box;
+    background-position: 0 0;
+    color: #ffffff;
+}
+
+.heading4Shell {
+    text-align: center;
+    margin-top: 138px;
+    margin-left: 48px;
+}
+
+.heading4 {
+    font-family: 'Overpass', sans-serif;
+    font-size: 30pt;
+    letter-spacing: 0.045ex;
+}
+
+.alt4Content {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.manLaptopV1 {
+    display: flex;
+    margin-top: 17px;
+}
+
+.manLaptopV1 > img {
+    width: 429px;
+    height: 362px;
+}
+
+.alt4Text {
+    margin-top: -14px;
+    margin-left: 48px;
+    margin-right: 50px;
+    width: 450px;
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.39;
+    padding-top: 16px;
+}
+
+.paragraph4 {
+    margin: 0 0 23px;
+}
+
+
+
+@media (min-width: 320px) and (max-width: 980px) {
+    .backgroundAlt4 {
+        margin-top: 85px;
+        width: 768px;
+        height: 878px;
+        background: url(../../media/imgs/bg-2_tablet.jpg) no-repeat;
+        background-size: auto 878px;
+    }
+
+    .heading4Shell {
+        width: 768px;
+        padding: 0 150px;
+        margin-left: 0;
+        margin-top: 117px;
+    }
+
+    .alt4Content {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+    }
+
+    .heading4 {
+        line-height: 1.2;
+    }
+
+    .alt4Text {
+        padding-top: 0;
+        width: 335px;
+        margin: 0;
+        line-height: 139%;
+
+    }
+
+    .paragraph4 {
+        margin: 0 0 21px;
+    }
+
+    .manLaptopV1 {
+        display: flex;
+        margin-top: 0;
+        margin-left: 50px;
+
+    }
+
+    .manLaptopV1 > img {
+        width: 360px;
+        height: 360px;
+    }
+
+}

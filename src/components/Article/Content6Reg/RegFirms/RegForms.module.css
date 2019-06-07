@@ -1,0 +1,239 @@
+
+.forms {
+    margin-top: 37px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justifyContent: flex-start;
+    padding-left: 46px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+fieldset {
+    padding: 0;
+    margin-bottom: 40px;
+    margin-right: 27px;
+    width: 290px;
+    height: 64px;
+    border: solid 1px #D3D3D3;
+    border-radius: 3px;
+}
+
+fieldset > input {
+    padding: 0 0 0 15px;
+    border: none;
+    width: 100%;
+    height: 45px;
+    color: black;
+    margin-top: -3px;
+}
+
+.Legend {
+    font-size: 9pt;
+    color: #D3D3D3;
+    margin-left: 15px;
+}
+
+
+/*сообщение ошибки под формой*/
+.error {
+    font-size: 10pt;
+    color: red;
+    margin-top: 5px;
+}
+
+
+/*изменение формы при ошибке*/
+.formsError {
+    border: solid 1px red;
+    color: red;
+}
+
+.formsError > legend {
+    color: red;
+}
+
+.positionShell {
+    width: 450px;
+    height: 55px;
+    border: solid 1px #D3D3D3;
+    padding: 0 20px 0 11px;
+}
+
+.position {
+    width: 100%;
+    height: 53px;
+    border: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 12pt;
+    color: black;
+    background: url("../../../media/icons/caret-down.svg") no-repeat right #fff;
+}
+
+
+/*инпут фото*/
+.photo {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 450px;
+    height: 55px;
+    border: solid 1px #D3D3D3;
+}
+
+.photo > label:hover {
+    cursor: pointer;
+}
+
+
+/*убрать оригинальную кнопку*/
+.inputFile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+
+
+.inputFile + label {
+    display: flex;
+    flex-direction: row;
+}
+
+.photoName {
+    display: block;
+    font-size: 11pt;
+    font-weight: bold;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #D3D3D3;
+    cursor: pointer;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    margin-top: 20px;
+    margin-left: 15px;
+    width: 305px;
+}
+
+.buttonUpload {
+    width: 129px;
+    display: inline-block;
+    height: 55px;
+    font-size: 14pt;
+    font-weight: bold;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #ff6d00;
+    letter-spacing: 0.12ex;
+    text-align: center;
+    border: solid 1.5px #ff6d00;
+    border-radius: 3px;
+    cursor: pointer;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    margin-top: 2px;
+    padding-top: 16px;
+}
+
+.commentPhoto {
+    color: #D3D3D3;
+    font-size: 9.5pt;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: -0.035ex;
+    margin-top: 4px;
+    margin-left: 15px;
+}
+
+.buttonSell {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+/*Окно подтверждения регестрации и затемнение остального*/
+.fon {
+    position: fixed;
+    background-color: #000000;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 956;
+    opacity: 0.7;
+}
+
+.congratulationsDiv {
+    position: fixed;
+    top: 33%;
+    left: 41.5%;
+    background-color: white;
+    text-align: center;
+    z-index: 957;
+    opacity: 1;
+    height: 180px;
+    width: 290px;
+    border-radius: 5px;
+    padding-right: 18px;
+}
+
+.congratulationsDiv > button {
+    float: right;
+    display: block;
+}
+
+.congratulationsDiv > h3 {
+    font-size: 16pt;
+    text-align: left;
+    margin-top: 22px;
+    margin-left: 23px;
+    margin-bottom: 0;
+}
+
+.congratulationsDiv > p {
+    font-size: 12pt;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 23px;
+    margin-bottom: 35px;
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.25;
+}
+
+@media (min-width: 320px) and (max-width: 980px) {
+    .forms {
+        padding-left: 23px;
+        margin-top: 27px;
+    }
+
+    fieldset {
+        width: 220px;
+        margin-bottom: 39px;
+    }
+
+    .forms > fieldset:nth-child(3) {
+        margin-right: 0;
+    }
+
+    .positionShell {
+        width: 345px;
+        padding: 0 13px 0 11px;
+    }
+
+    .photo {
+        width: 345px;
+        margin-right: 0;
+    }
+
+    .photoName {
+        width: 200px;
+    }
+
+    .buttonSell {
+        margin-top: 22px;
+    }
+
+    .congratulationsDiv {
+        left: 35%;
+    }
+}
