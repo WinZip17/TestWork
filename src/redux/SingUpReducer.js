@@ -43,8 +43,7 @@ const SingUpUsers = (state = initialState, action) => {
         case UPDATE_EMAIL:
             return {...state, email: action.email, ...state.validations.emailValid = action.emailValid};
         case UPDATE_PHONE:
-            let phoneFull = state.phone_start + action.phone;
-            return {...state, phone_update: action.phone, phone: phoneFull, ...state.validations.phoneValid = action.phoneValid};
+            return {...state, phone: action.phone, ...state.validations.phoneValid = action.phoneValid};
         case UPDATE_POSITION:
             return {...state, position_id: action.position_id};
         case SHOW_POSITION:

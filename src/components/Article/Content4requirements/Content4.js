@@ -12,44 +12,44 @@ const Content4 = () => {
                 </div>
                 <div className="alt4Content">
                     <div className="manLaptopV1">
-                        <svg width="429px" height="362px" viewBox="0 0 429 362" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsxlink="http://www.w3.org/1999/xlink">
+                        <svg width="429px" height="362px" viewBox="0 0 429 362" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
                             <title>man-laptop-v1</title>
                             <desc>Created with Sketch.</desc>
                             <defs>
                                 <linearGradient x1="49.9996918%" y1="99.9979689%" x2="49.9996918%" y2="0.00240706678%" id="linearGradient-1">
-                                    <stop stop-color="#76AADB" offset="0%"></stop>
-                                    <stop stop-color="#4A72B2" offset="100%"></stop>
+                                    <stop stopColor="#76AADB" offset="0%"></stop>
+                                    <stop stopColor="#4A72B2" offset="100%"></stop>
                                 </linearGradient>
                                 <linearGradient x1="1.37163792e-14%" y1="49.9877232%" x2="100%" y2="49.9877232%" id="linearGradient-2">
-                                    <stop stop-color="#2ACAFF" offset="0%"></stop>
-                                    <stop stop-color="#2ADFC3" offset="100%"></stop>
+                                    <stop stopColor="#2ACAFF" offset="0%"></stop>
+                                    <stop stopColor="#2ADFC3" offset="100%"></stop>
                                 </linearGradient>
                                 <linearGradient x1="0%" y1="-2838.69509%" x2="100%" y2="-2838.69509%" id="linearGradient-3">
-                                    <stop stop-color="#2ACAFF" offset="0%"></stop>
-                                    <stop stop-color="#2ADFC3" offset="100%"></stop>
+                                    <stop stopColor="#2ACAFF" offset="0%"></stop>
+                                    <stop stopColor="#2ADFC3" offset="100%"></stop>
                                 </linearGradient>
                                 <linearGradient x1="0%" y1="50.0397675%" x2="99.9881503%" y2="50.0397675%" id="linearGradient-4">
-                                    <stop stop-color="#FFFFFF" offset="0%"></stop>
-                                    <stop stop-color="#F7F7F8" offset="100%"></stop>
+                                    <stop stopColor="#FFFFFF" offset="0%"></stop>
+                                    <stop stopColor="#F7F7F8" offset="100%"></stop>
                                 </linearGradient>
                                 <linearGradient x1="0%" y1="-2231.98087%" x2="100%" y2="-2231.98087%" id="linearGradient-5">
-                                    <stop stop-color="#FFFFFF" offset="0%"></stop>
-                                    <stop stop-color="#F7F7F8" offset="100%"></stop>
+                                    <stop stopColor="#FFFFFF" offset="0%"></stop>
+                                    <stop stopColor="#F7F7F8" offset="100%"></stop>
                                 </linearGradient>
                                 <linearGradient x1="-0.00110556171%" y1="241.326809%" x2="99.9860863%" y2="241.326809%" id="linearGradient-6">
-                                    <stop stop-color="#2ACAFF" offset="0%"></stop>
-                                    <stop stop-color="#2ADFC3" offset="100%"></stop>
+                                    <stop stopColor="#2ACAFF" offset="0%"></stop>
+                                    <stop stopColor="#2ADFC3" offset="100%"></stop>
                                 </linearGradient>
                                 <linearGradient x1="-0.00940329686%" y1="570.503162%" x2="99.9963569%" y2="570.503162%" id="linearGradient-7">
-                                    <stop stop-color="#2ACAFF" offset="0%"></stop>
-                                    <stop stop-color="#2ADFC3" offset="100%"></stop>
+                                    <stop stopColor="#2ACAFF" offset="0%"></stop>
+                                    <stop stopColor="#2ADFC3" offset="100%"></stop>
                                 </linearGradient>
                                 <linearGradient x1="0.353973066%" y1="775.603996%" x2="100.501238%" y2="775.603996%" id="linearGradient-8">
-                                    <stop stop-color="#2ACAFF" offset="0%"></stop>
-                                    <stop stop-color="#2ADFC3" offset="100%"></stop>
+                                    <stop stopColor="#2ACAFF" offset="0%"></stop>
+                                    <stop stopColor="#2ADFC3" offset="100%"></stop>
                                 </linearGradient>
                             </defs>
-                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
                                 <g id="man-laptop-v1">
                                     <path d="M117.16,302.28 C117.16,302.28 29.23,241.43 117.16,158.38 C205.09,75.33 307.24,27 371.07,24.19 C434.9,21.38 444.84,174.55 406.53,275.28 C368.22,376.01 237.73,393 117.16,302.28 Z" id="_Path_" fill="url(#linearGradient-1)"></path>
                                     <path d="M312.8,202.22 C312.8,202.22 354.03,252.44 302.9,284.91 L294.9,268.46 C294.9,268.46 312.55,250.08 299.47,227.66 L312.8,202.22 Z" id="_Path_2" fill="#FFCB9C"></path>
@@ -69,11 +69,11 @@ const Content4 = () => {
                                         </g>
                                         <path d="M52,34.69 C52,37.17 51,39.18 49.68,39.18 C48.36,39.18 47.36,37.18 47.36,34.69 C47.36,32.2 48.36,30.23 49.68,30.23 C51,30.23 52,32.22 52,34.69 Z" id="_Path_10" fill="#191919"></path>
                                         <path d="M77.28,37.59 C77.28,40.06 76.28,42.07 74.96,42.07 C73.64,42.07 72.64,40.07 72.64,37.59 C72.64,35.11 73.64,33.12 74.96,33.12 C76.28,33.12 77.28,35.13 77.28,37.59 Z" id="_Path_11" fill="#191919"></path>
-                                        <circle id="_Path_12" stroke="#1D1D1B" stroke-width="2" transform="translate(78.906087, 34.722280) rotate(-7.000000) translate(-78.906087, -34.722280) " cx="78.9060874" cy="34.7222799" r="14.27"></circle>
+                                        <circle id="_Path_12" stroke="#1D1D1B" strokeWidth="2" transform="translate(78.906087, 34.722280) rotate(-7.000000) translate(-78.906087, -34.722280) " cx="78.9060874" cy="34.7222799" r="14.27"></circle>
                                         <polygon id="_Path_13" fill="#FF6252" points="65.06 22.62 72.6 52.56 57.07 50.85"></polygon>
-                                        <path d="M61.7,32.41 C61.7,40.2911034 55.3111034,46.68 47.43,46.68 C39.5488966,46.68 33.16,40.2911034 33.16,32.41 C33.16,24.5288966 39.5488966,18.14 47.43,18.14 C51.2146393,18.14 54.8442696,19.6434421 57.5204138,22.3195862 C60.1965579,24.9957304 61.7,28.6253607 61.7,32.41 Z" id="_Path_14" stroke="#1D1D1B" stroke-width="2"></path>
-                                        <path d="M68.22,25.26 L59.67,25.26" id="_Path_15" stroke="#1D1D1B" stroke-width="2"></path>
-                                        <path d="M33.61,28.55 L7.01,36.84" id="_Path_16" stroke="#1D1D1B" stroke-width="2"></path>
+                                        <path d="M61.7,32.41 C61.7,40.2911034 55.3111034,46.68 47.43,46.68 C39.5488966,46.68 33.16,40.2911034 33.16,32.41 C33.16,24.5288966 39.5488966,18.14 47.43,18.14 C51.2146393,18.14 54.8442696,19.6434421 57.5204138,22.3195862 C60.1965579,24.9957304 61.7,28.6253607 61.7,32.41 Z" id="_Path_14" stroke="#1D1D1B" strokeWidth="2"></path>
+                                        <path d="M68.22,25.26 L59.67,25.26" id="_Path_15" stroke="#1D1D1B" strokeWidth="2"></path>
+                                        <path d="M33.61,28.55 L7.01,36.84" id="_Path_16" stroke="#1D1D1B" strokeWidth="2"></path>
                                         <path d="M21.4,58.64 C21.4040459,61.4438298 19.7181733,63.9738267 17.1289326,65.0496106 C14.539692,66.1253944 11.5573367,65.5349639 9.57329658,63.5537868 C7.58925647,61.5726097 6.99451994,58.5911101 8.06656369,56.0003187 C9.13860745,53.4095273 11.6661673,51.7200029 14.47,51.72 C18.2934315,51.719996 21.3944828,54.8165725 21.4,58.64 Z" id="_Path_17" fill="#191919"></path>
                                         <path d="M23.76,66.81 C23.76,70.1237085 21.0737085,72.81 17.76,72.81 C14.4462915,72.81 11.76,70.1237085 11.76,66.81 C11.76,63.4962915 14.4462915,60.81 17.76,60.81 C21.0737085,60.81 23.76,63.4962915 23.76,66.81 Z" id="_Path_18" fill="#191919"></path>
                                         <path d="M25.85,76.29 C25.8499975,79.5710983 23.8729757,82.5289292 20.8412485,83.783615 C17.8095213,85.0383007 14.3204825,84.3426087 12.0018274,82.021091 C9.68317225,79.6995734 8.99178559,76.2096788 10.2502109,73.179502 C11.5086362,70.1493252 14.4689042,68.1759543 17.75,68.18 C19.8999873,68.1799984 21.9617709,69.0347613 23.4811034,70.5559695 C25.0004358,72.0771777 25.8526543,74.1400143 25.85,76.29 Z" id="_Path_19" fill="#191919"></path>
@@ -103,33 +103,33 @@ const Content4 = () => {
                                         </g>
                                     </g>
                                     <g id="_Group_7" transform="translate(305.000000, 48.000000)" stroke="#141414">
-                                        <circle id="_Path_38" stroke-width="3" fill="#FFFFFF" cx="48" cy="47.26" r="47.17"></circle>
-                                        <polyline id="_Path_39" fill="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" points="47.97 17.17 47.97 47.26 71.52 47.26"></polyline>
-                                        <path d="M47.97,5.34 L47.97,9.37" id="_Path_40" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        <path d="M62.22,7.83 L60.86,11.62" id="_Path_41" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        <path d="M74.8,15.04 L72.2,18.13" id="_Path_42" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        <path d="M84.15,26.07 L80.67,28.11" id="_Path_43" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        <path d="M89.2,39.62 L85.22,40.37" id="_Path_44" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        <path d="M89.34,54.1 L85.34,53.44" id="_Path_45" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        <path d="M84.55,67.76 L81.01,65.79" id="_Path_46" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        <path d="M75.39,78.97 L72.75,75.92" id="_Path_47" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        <path d="M62.97,86.4 L61.53,82.62" id="_Path_48" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        <path d="M48.77,89.17 L48.68,85.13" id="_Path_49" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        <path d="M34.47,86.93 L35.77,83.11" id="_Path_50" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        <path d="M21.77,79.97 L24.3,76.82" id="_Path_51" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        <path d="M12.22,69.11 L15.66,67" id="_Path_52" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        <path d="M6.9,55.64 L10.87,54.85" id="_Path_53" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        <path d="M6.5,41.18 L10.5,41.77" id="_Path_54" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        <path d="M11.04,27.43 L14.61,29.34" id="_Path_55" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        <path d="M19.97,16.06 L22.67,19.07" id="_Path_56" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        <path d="M32.25,8.39 L33.77,12.14" id="_Path_57" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <circle id="_Path_38" strokeWidth="3" fill="#FFFFFF" cx="48" cy="47.26" r="47.17"></circle>
+                                        <polyline id="_Path_39" fill="#FFFFFF" strokeLinecap="round" strokeLinejoin="round" points="47.97 17.17 47.97 47.26 71.52 47.26"></polyline>
+                                        <path d="M47.97,5.34 L47.97,9.37" id="_Path_40" strokeLinecap="round" strokeLinejoin="round"></path>
+                                        <path d="M62.22,7.83 L60.86,11.62" id="_Path_41" strokeLinecap="round" strokeLinejoin="round"></path>
+                                        <path d="M74.8,15.04 L72.2,18.13" id="_Path_42" strokeLinecap="round" strokeLinejoin="round"></path>
+                                        <path d="M84.15,26.07 L80.67,28.11" id="_Path_43" strokeLinecap="round" strokeLinejoin="round"></path>
+                                        <path d="M89.2,39.62 L85.22,40.37" id="_Path_44" strokeLinecap="round" strokeLinejoin="round"></path>
+                                        <path d="M89.34,54.1 L85.34,53.44" id="_Path_45" strokeLinecap="round" strokeLinejoin="round"></path>
+                                        <path d="M84.55,67.76 L81.01,65.79" id="_Path_46" strokeLinecap="round" strokeLinejoin="round"></path>
+                                        <path d="M75.39,78.97 L72.75,75.92" id="_Path_47" strokeLinecap="round" strokeLinejoin="round"></path>
+                                        <path d="M62.97,86.4 L61.53,82.62" id="_Path_48" strokeLinecap="round" strokeLinejoin="round"></path>
+                                        <path d="M48.77,89.17 L48.68,85.13" id="_Path_49" strokeLinecap="round" strokeLinejoin="round"></path>
+                                        <path d="M34.47,86.93 L35.77,83.11" id="_Path_50" strokeLinecap="round" strokeLinejoin="round"></path>
+                                        <path d="M21.77,79.97 L24.3,76.82" id="_Path_51" strokeLinecap="round" strokeLinejoin="round"></path>
+                                        <path d="M12.22,69.11 L15.66,67" id="_Path_52" strokeLinecap="round" strokeLinejoin="round"></path>
+                                        <path d="M6.9,55.64 L10.87,54.85" id="_Path_53" strokeLinecap="round" strokeLinejoin="round"></path>
+                                        <path d="M6.5,41.18 L10.5,41.77" id="_Path_54" strokeLinecap="round" strokeLinejoin="round"></path>
+                                        <path d="M11.04,27.43 L14.61,29.34" id="_Path_55" strokeLinecap="round" strokeLinejoin="round"></path>
+                                        <path d="M19.97,16.06 L22.67,19.07" id="_Path_56" strokeLinecap="round" strokeLinejoin="round"></path>
+                                        <path d="M32.25,8.39 L33.77,12.14" id="_Path_57" strokeLinecap="round" strokeLinejoin="round"></path>
                                     </g>
                                     <g id="_Group_8">
                                         <path d="M75.6,17.08 C70.0827416,17.7981314 64.6168459,15.4281682 61.37,10.91 C58.48,7 52.61,1.94 43.39,7 C29.54,14.58 27.31,22.57 13.46,25.3 C-0.39,28.03 -3.69,38.71 4.21,46.76 C12.11,54.81 13.46,63.76 9.4,70.88 C5.34,78 3.13,96.35 17.32,97.68 C31.51,99.01 39.83,96.35 43.84,107.52 C47.85,118.69 63.84,132.58 83.34,120.92 C102.84,109.26 122.27,120.46 129.66,119.09 C133.634312,118.392513 137.168202,116.143394 139.482908,112.838279 C141.797614,109.533164 142.703163,105.443312 142,101.47 C142,101.15 141.88,100.84 141.81,100.47 C139.81,90.34 143.16,80.21 150.58,75.47 C150.58,75.47 159.71,72.88 161.93,61.36 C164.15,49.84 162.27,37.36 145.11,31.54 C127.95,25.72 132.71,12.54 117.6,4.84 C102.49,-2.86 91.6,2.42 87.38,7.4 C84,11.36 81.39,16.23 75.6,17.08 Z" id="_Path_58" fill="url(#linearGradient-6)"></path>
                                         <path d="M130.72,122 C129.414705,125.999035 125.824848,128.814841 121.63,129.13 C114.29,129.84 114.98,139.99 124.07,138.59 C133.16,137.19 135.62,139.64 138.6,139.99 C141.58,140.34 146.11,139.45 146.48,133.99 C146.85,128.53 142.27,128.92 139.12,128.8 C135.97,128.68 138.95,122.86 137.02,121.11 C136.197902,120.369889 135.115423,119.986744 134.010783,120.044883 C132.906143,120.103022 131.869865,120.597681 131.13,121.42 C130.977426,121.601583 130.840283,121.79559 130.72,122 Z" id="_Path_59" fill="url(#linearGradient-7)"></path>
                                         <path d="M152.05,147.94 C150.730406,147.032667 149.010308,146.952574 147.61211,147.733358 C146.213913,148.514142 145.379768,150.02058 145.46,151.62 L145.46,152.06 C145.63,157.25 149.99,155.21 152.16,155.52 C154.33,155.83 155.43,153.37 155.43,151.3 C155.43,149.23 153.66,149.49 152.38,148.16 L152.05,147.94 Z" id="_Path_60" fill="url(#linearGradient-8)"></path>
                                     </g>
-                                    <g id="_Group_9" transform="translate(46.000000, 25.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                                    <g id="_Group_9" transform="translate(46.000000, 25.000000)" fill="#FFFFFF" fillRule="nonzero">
                                         <path d="M38.11,64.89 L42.75,64.7 L42.43,57.26 L37.59,57.48 C37.0782425,55.7898124 36.2983076,54.1928027 35.28,52.75 L38.5,49.39 L33.14,44.2 L29.78,47.66 C28.2397446,46.7941641 26.5726105,46.176582 24.84,45.83 L24.84,41.27 L17.39,41.27 L17.39,46.14 C15.309135,46.6725413 13.3524424,47.6067262 11.63,48.89 L8.17,45.58 L3.09,51 L6.83,54.46 C5.75121182,56.5381117 5.10807768,58.8146024 4.94,61.15 L0.34,61.75 L1.29,69.13 L6.1,68.51 C6.75946494,70.1500784 7.67408972,71.675578 8.81,73.03 L5.88,76.64 L11.68,81.3 L14.61,77.53 C16.2125148,78.2695647 17.9250537,78.7424551 19.68,78.93 L20.08,83.55 L27.49,82.91 L27.13,78.1 C28.783865,77.5151059 30.3359843,76.674937 31.73,75.61 L35.2,78.67 L40.11,73.08 L36.46,69.87 C37.2684702,68.3071011 37.8253151,66.6264422 38.11,64.89 Z M21.39,68.53 C17.5626667,68.53 14.46,65.4273333 14.46,61.6 C14.46,57.7726667 17.5626667,54.67 21.39,54.67 C25.2173333,54.67 28.32,57.7726667 28.32,61.6 C28.3226591,63.4387642 27.5933901,65.2029822 26.2931862,66.5031862 C24.9929822,67.8033901 23.2287642,68.5326591 21.39,68.53 Z" id="_Compound_Path_"></path>
                                         <path d="M80.58,44.62 L85.24,44.42 L84.93,37 L80.08,37.22 C79.5695412,35.5342388 78.7930936,33.9408333 77.78,32.5 L81,29.12 L75.61,23.92 L72.27,27.39 C70.7309167,26.5194619 69.0635562,25.8984207 67.33,25.55 L67.33,21 L59.89,21 L59.89,25.86 C57.8046997,26.3938643 55.8443618,27.3315649 54.12,28.62 L50.66,25.31 L45.6,30.76 L49.34,34.23 C48.2497131,36.2993501 47.6090495,38.5757507 47.46,40.91 L42.83,41.52 L43.83,48.89 L48.65,48.27 C49.2987531,49.9088772 50.2033223,51.434494 51.33,52.79 L48.42,56.41 L54.22,61.07 L57.22,57.36 C58.8194485,58.0983524 60.5284981,58.5712119 62.28,58.76 L62.68,63.39 L70.09,62.68 L69.66,57.84 C71.3218835,57.2593042 72.8812279,56.4188784 74.28,55.35 L77.74,58.42 L82.66,52.82 L79.01,49.62 C79.7978059,48.0482004 80.3278975,46.3600104 80.58,44.62 Z M63.89,48.25 C61.0861673,48.2499971 58.5586074,46.5604727 57.4865637,43.9696813 C56.4145199,41.3788899 57.0092565,38.3973903 58.9932966,36.4162132 C60.9773367,34.4350361 63.959692,33.8446056 66.5489326,34.9203894 C69.1381733,35.9961733 70.8240459,38.5261702 70.82,41.33 C70.8200019,43.167032 70.08956,44.9286783 68.7896447,46.2267179 C67.4897293,47.5247574 65.7270301,48.2526547 63.89,48.25 Z" id="_Compound_Path_2"></path>
                                         <path d="M42.19,22.73 L46.82,22.09 L45.82,14.71 L41.02,15.39 C40.3427195,13.7653637 39.4147731,12.257029 38.27,10.92 L41.14,7.26 L35.29,2.66 L32.29,6.49 C30.674864,5.77336099 28.9573312,5.31445243 27.2,5.13 L26.77,0.53 L19.36,1.26 L19.84,6.09 C17.811669,6.82011073 15.9463989,7.94131133 14.35,9.39 L10.51,6.45 L6,12.34 L10,15.44 C9.09928137,17.6319988 8.67982381,19.9918739 8.77,22.36 L4.2,23.36 L6,30.61 L10.73,29.52 C11.5425489,31.0839977 12.5991296,32.508525 13.86,33.74 L11.31,37.64 L17.5,41.78 L20.16,37.71 C21.8335155,38.2882317 23.5894951,38.5921513 25.36,38.61 L26.21,43.18 L33.5,41.78 L32.56,37 C34.1558517,36.2595704 35.6241072,35.2706075 36.91,34.07 L40.7,36.77 L45.03,30.77 L41.03,27.96 C41.7078431,26.2942471 42.1000054,24.5261361 42.19,22.73 Z M25.93,27.92 C23.141351,28.2087934 20.4534181,26.7889219 19.1200631,24.3227246 C17.7867082,21.8565272 18.0706383,18.8299116 19.8394062,16.6547277 C21.6081742,14.4795438 24.5132848,13.5843618 27.1995675,14.3867645 C29.8858502,15.1891672 31.8240346,17.5310596 32.11,20.32 L32.11,20.39 C32.470369,24.1721324 29.7097819,27.5357603 25.93,27.92 Z" id="_Compound_Path_3"></path>

@@ -17,8 +17,8 @@ class Header extends React.Component {
                         <li className="menuItem"><a href='#relationships'>Relationships</a></li>
                         <li className="menuItem"><a href='#requirements'>Requirements</a></li>
                         <li className="menuItem"><a href='#users'>Users</a></li>
-                        <li className="menuItem"><a href='#signUp'>Sign Up</a>
-                        </li><li className="menuItem itemSingOut"><a href='#'>Sign Uot</a></li>
+                        <li className="menuItem"><a href='#signUp'>Sign Up</a></li>
+                        <li className="menuItem itemSingOut"><a href='#'>Sign Uot</a></li>
                     </menu>
                     <UserInfoContainer/>
                 </div>

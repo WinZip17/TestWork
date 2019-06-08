@@ -16,7 +16,8 @@ class UserListData extends React.Component {
     }
 
     render() {
-        return <UserInfo user={this.props.state.userInfo.superUserInfo} buttonOut={this.props.buttonOut}/>
+        return this.props.state.userInfo.superUserInfo.position_id ?  <UserInfo user={this.props.state.userInfo.superUserInfo} buttonOut={this.props.buttonOut}/> : <div></div>
+
     }
 }
 

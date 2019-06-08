@@ -1,9 +1,5 @@
 .backgroundAlt1 {
     display: flex;
-    background: url(../../media/imgs/bg-1_desktop.jpg) no-repeat center;
-    background-size: 130% 123%;
-    background-origin: border-box;
-    background-position: 0px 0px;
     height: 725px;
     width: 1024px;
     padding: 0;
@@ -35,7 +31,16 @@ p.art1Text {
     margin-top: 18px;
 }
 
-@media (min-width: 320px) and (max-width: 980px) {
+@media (min-width: 1024px) and (max-width: 2048px) {
+    .backgroundAlt1 {
+        background: url(../../media/imgs/bg-1_desktop.jpg) no-repeat center;
+        background-size: 130% 123%;
+        background-origin: border-box;
+        background-position: 0px 0px;    }
+}
+
+
+@media (min-width: 320px) and (max-width: 1024px) {
     .backgroundAlt1 {
         background: url(../../media/imgs/bg-1_tablet.jpg) no-repeat center;
         background-size: auto 623px;

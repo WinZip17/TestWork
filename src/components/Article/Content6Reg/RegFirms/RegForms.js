@@ -3,6 +3,7 @@ import stl from './RegForms.module.css';
 import {API} from "../../../../API/api";
 import {regUsersValidation} from "./RegFormsContainer";
 import LegendErrors from "./LegendErrors";
+import InputMask  from 'react-input-mask';
 
 
 const RegForms = (props) => {
@@ -31,7 +32,7 @@ let singUp = {
                 </fieldset>
                 <fieldset className={props.newUser.validations.phoneValid ? "" : stl.formsError}>
                     <legend className={stl.Legend}>Phone</legend>
-                    <input onChange={props.updatePhone} type="text" placeholder="+38(__) ___ __ __" value={props.newUser.phone_start + props.newUser.phone_update} />
+                    <InputMask onChange={props.updatePhone} type="text" mask='+380(99) 999 99 99'  maskChar="_" placeholder="+380(__) ___ __ __" value={props.newUser.phone} />
                     <LegendErrors formErrors={props.newUser.validations.phoneValid ? "" : props.newUser.validations.formErrors.phone}/>
                 </fieldset>
                 <fieldset className={stl.positionShell}>

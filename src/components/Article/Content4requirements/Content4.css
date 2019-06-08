@@ -4,10 +4,6 @@
     height: 755px;
     width: 1024px;
     padding: 0;
-    background: url(../../media/imgs/bg-2_desktop.jpg) no-repeat;
-    background-size: 112% 104%;
-    background-origin: border-box;
-    background-position: 0 0;
     color: #ffffff;
 }
 
@@ -52,9 +48,18 @@
     margin: 0 0 23px;
 }
 
+@media (min-width: 1024px) and (max-width: 2048px) {
+    .backgroundAlt4 {
+
+        background: url(../../media/imgs/bg-2_desktop.jpg) no-repeat;
+        background-size: 112% 104%;
+        background-origin: border-box;
+        background-position: 0 0;
+    }
+}
 
 
-@media (min-width: 320px) and (max-width: 980px) {
+@media (min-width: 320px) and (max-width: 1024px) {
     .backgroundAlt4 {
         margin-top: 85px;
         width: 768px;

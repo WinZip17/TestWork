@@ -1,5 +1,4 @@
 import * as axios from "axios";
-import React from "react";
 import {RegistResult} from "../components/Article/Content6Reg/RegFirms/RegFormsContainer";
 
 const instance = axios.create({
