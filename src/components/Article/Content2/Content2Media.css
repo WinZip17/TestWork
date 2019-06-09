@@ -1,0 +1,89 @@
+/*Tablet*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    .backgroundAlt2 {
+        width: 768px;
+    }
+
+    .manMobile {
+        margin-left: -10px;
+        width: 225px;
+        height: 220px;
+        margin-top: 22px;
+    }
+
+    h2.heading2 {
+        margin-top: 15px;
+    }
+
+    .alt2Text {
+        margin-top: -5px;
+        margin-left: 273px;
+    }
+
+    p.p2 {
+        margin-top: 14px;
+    }
+}
+
+
+/*Mobile*/
+@media (min-width: 320px) and (max-width: 768px) {
+    .backgroundAlt2 {
+        width: 320px;
+        height: 750px;
+    }
+
+    .alt2Content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .manMobile {
+        width: 224px;
+        position: static;
+        margin-top: -10px;
+    }
+
+    .heading2Shell {
+        margin-top: 66px;
+    }
+
+    .heading2 {
+        margin-top: 0;
+        font-size: 18pt;
+        letter-spacing: 0.07ex;
+    }
+
+    .alt2Text {
+        padding-right: 0;
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .alt2Text h4 {
+        font-size: 16pt;
+        text-align: center;
+        width: 275px;
+        letter-spacing: 0.02ex;
+        margin-left: 22px;
+        margin-top: -23px;
+        margin-bottom: 10px;
+    }
+
+    p.p2 {
+        margin-left: 15px;
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 290px;
+        text-align: center;
+        line-height: 1.35;
+    }
+
+    /*выравнивание кнопки */
+    .alt2Text > .buttonText {
+        text-align: center;
+        margin-top: 15px;
+        margin-left: 13px;
+    }
+
+}

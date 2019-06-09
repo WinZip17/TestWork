@@ -7,12 +7,12 @@
 }
 
 .art1 {
-    padding: 100px 47px;
+    padding: 91px 47px;
     color: #ffffff;
     text-align: justify;
 }
 
-h1.art1Text {
+h1 {
     width: 445px;
     font-size: 310%;
     line-height: 1.22;
@@ -31,45 +31,7 @@ p.art1Text {
     margin-top: 18px;
 }
 
-@media (min-width: 1024px) and (max-width: 2048px) {
-    .backgroundAlt1 {
-        background: url(../../media/imgs/bg-1_desktop.jpg) no-repeat center;
-        background-size: 130% 123%;
-        background-origin: border-box;
-        background-position: 0px 0px;    }
+.mobile {
+    display: none;
 }
 
-
-@media (min-width: 320px) and (max-width: 1024px) {
-    .backgroundAlt1 {
-        background: url(../../media/imgs/bg-1_tablet.jpg) no-repeat center;
-        background-size: auto 623px;
-        background-position: left;
-        width: 768px;
-        height: 623px;
-    }
-
-    .art1 {
-        padding: 85px 23px;
-    }
-
-    h1.art1Text {
-        font-size: 280%;
-        line-height: 1.12;
-        letter-spacing: -0.06ex;
-        text-align: left;
-    }
-
-    p.art1Text {
-        width: 400px;
-        font-size: 115%;
-        line-height: 1.35;
-        margin-bottom: 33px;
-        margin-top: 22px;
-    }
-
-    .buttonArt1 {
-        margin-left: 2px;
-    }
-
-}

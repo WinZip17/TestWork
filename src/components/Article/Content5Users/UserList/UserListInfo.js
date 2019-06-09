@@ -1,5 +1,6 @@
 import React from 'react';
 import './UserListInfo.css'
+import './UserListInfoMedia.css'
 import UserInfoForList from "./UserInfo/UserInfoForList";
 
 const UserListInfo  = (props) => {

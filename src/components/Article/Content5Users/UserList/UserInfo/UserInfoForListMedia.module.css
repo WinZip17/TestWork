@@ -1,0 +1,73 @@
+/*Tablet*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    .user {
+        width: 200px;
+        height: 220px;
+        margin-bottom: 7px;
+    }
+
+    .shell {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .avatarShell {
+        margin: 0 auto;
+        width: 70px;
+        height: 100%;
+    }
+
+    .content {
+        text-align: center;
+    }
+
+    .username {
+        margin-top: 10px;
+    }
+
+    .specialty {
+        margin-top: 5px;
+    }
+
+    .mail {
+        margin-top: 0;
+    }
+}
+
+/*Mobile*/
+@media (min-width: 320px) and (max-width: 768px) {
+    .user {
+        width: auto;
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    .shell {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .avatarShell {
+        margin: 0 auto;
+        width: auto;
+        height: 100%;
+
+    }
+
+    .content {
+        text-align: center;
+        width: auto;
+    }
+
+    .username {
+        margin-top: 10px;
+    }
+
+    .specialty {
+        margin-top: 0;
+    }
+
+    .mail {
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,156 @@
+/*Tablet*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    .backgroundAlt3 {
+        width: 768px;
+    }
+
+    .heading3Shell {
+        margin-top: 55px;
+
+    }
+
+    .alt3 > div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .alt3 > div > h1 {
+
+        letter-spacing: -0.32px;
+        line-height: 1.2;
+        padding: 0;
+    }
+
+    .alt3Content {
+        margin-top: 5px;
+    }
+
+    .alt3Content > div {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        padding-right: 30px;
+    }
+
+    .infoCell {
+        display: flex;
+        flex-direction: row;
+        padding-left: 43px;
+        margin-bottom: 46px;
+    }
+
+    .imgAlt3 {
+        width: 87px;
+    }
+
+    .alt3 > div > div > div > h2 {
+        margin-top: -1px;
+        margin-left: 35px;
+        margin-bottom: 19px;
+    }
+
+    .alt3 > div > div > div > p {
+        margin-left: 35px;
+        margin-bottom: 0;
+    }
+
+    .textAl3Sell {
+        width: 500px;
+    }
+
+    .cssTextAlt3Sell {
+        width: 450px;
+    }
+
+}
+
+
+/*Mobile*/
+@media (min-width: 320px) and (max-width: 768px) {
+    .backgroundAlt3 {
+        width: 320px;
+        height: auto;
+    }
+
+    .heading3Shell {
+        margin-top: 30px;
+        width: 320px;
+    }
+
+    .heading3Mobile {
+        display: block;
+    }
+
+    .heading3Desktop {
+        display: none;
+    }
+
+    .alt3 {
+        padding-left: 0;
+    }
+
+    .alt3 > div {
+        display: flex;
+        flex-direction: column;
+        width: 320px;
+    }
+
+    .alt3 > div > h1 {
+        letter-spacing: -0.5px;
+        line-height: 1.2;
+        font-size: 20pt;
+        margin-left: 0;
+
+    }
+
+    .alt3Content {
+        margin-top: 0;
+
+    }
+
+    .alt3Content > div {
+        padding-right: 0;
+    }
+
+    .infoCell {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: 30px;
+    }
+
+    .imgAlt3 {
+        display: block;
+        width: 88px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+    }
+
+    .alt3 > div > div > div > h2 {
+        margin-top: 10px;
+        margin-left: 0;
+        margin-bottom: -1px;
+        text-align: center;
+        font-size: 18pt;
+        letter-spacing: -0.07ex;
+    }
+
+    .alt3 > div > div > div > p {
+        margin: 0;
+        text-align: center;
+        width: 100%;
+        font-size: 12pt;
+        padding: 0 20px;
+    }
+
+    .textAl3Sell {
+        width: auto;
+    }
+
+    .cssTextAlt3Sell {
+        width: auto;
+    }
+
+}

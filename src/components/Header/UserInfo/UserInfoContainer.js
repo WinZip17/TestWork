@@ -1,5 +1,6 @@
 import React from 'react';
 import './UserInfo.css'
+import './UserInfoMedia.css'
 import {connect} from "react-redux";
 import UserInfo from "./UserInfo";
 import {saveUsersAC} from "../../../redux/UserInfoReducer";

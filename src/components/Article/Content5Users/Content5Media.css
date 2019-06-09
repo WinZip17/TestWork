@@ -1,0 +1,55 @@
+/*Tablet*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    .backgroundAlt5 {
+        width: 768px;
+    }
+
+    .headers5 {
+        margin-top: 116px;
+    }
+
+    .headers5 > h2 {
+        margin-top: 17px;
+        letter-spacing: -0.09ex;
+    }
+}
+
+
+/*Mobile*/
+@media (min-width: 320px) and (max-width: 768px) {
+    .backgroundAlt5 {
+        width: 320px;
+        height: auto;
+    }
+
+    .headers5 {
+        margin-top: 66px;
+    }
+
+    .headers5 > h1 {
+        font-size: 20pt;
+        letter-spacing: -0.02ex;
+    }
+
+    .headers5 > h2 {
+        font-size: 12pt;
+        padding: 0 80px;
+        margin-top: 16px;
+        letter-spacing: -0.09ex;
+    }
+
+    div.usersList > div:nth-child(4) {
+        display: none;
+    }
+
+    div.usersList > div:nth-child(5) {
+        display: none;
+    }
+
+    div.usersList > div:nth-child(6) {
+        display: none;
+    }
+
+}
+
+

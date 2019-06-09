@@ -1,0 +1,158 @@
+/*Tablet*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    footer {
+        width: 768px;
+        margin-top: 100px;
+    }
+
+    .logoBlock {
+        margin-left: 23px;
+    }
+
+    .footerMenu {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-right: 18px;
+        width: 460px;
+    }
+
+    .footerImgMail, .footerImgPhone, .footerImgMobile {
+        display: none;
+    }
+
+    .contacts {
+        margin-left: 23px;
+        width: 200px;
+    }
+
+    .contacts > div > span {
+        font-size: 14pt;
+        font-family: 'Source Sans Pro', sans-serif;
+        letter-spacing: -0.025ex;
+    }
+
+    .socialContext {
+        padding-top: 20px;
+    }
+
+    .social {
+        margin-left: 24px;
+    }
+
+    .link1 {
+        margin-left: 51px;
+    }
+
+    .link2 {
+        margin-left: 8px;
+    }
+
+    .link3 {
+        margin-left: 16px;
+    }
+
+    .link4 {
+        margin-left: 12px;
+    }
+
+    .contactsLink {
+        justify-content: flex-start;
+    }
+
+    .social {
+        margin: 0 24px 0 48px;
+    }
+}
+
+
+/*Mobile*/
+@media (min-width: 320px) and (max-width: 768px) {
+    footer {
+        width: 320px;
+        margin-top: 50px;
+        height: 460px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footerMenuShell {
+        display: flex;
+        flex-direction: column;
+        height: 225px;
+    }
+
+    .logoBlock {
+        margin: 11px auto 0;
+    }
+
+    .footerMenu {
+        display: flex;
+        flex-direction: column;
+        margin: 15px auto 25px;
+        width: auto;
+    }
+
+    .footerMenu > li {
+        margin-right: auto;
+    }
+
+    .footerMenuItem {
+        margin: 0 auto 6px;
+    }
+
+    menu > li:nth-child(5) {
+        margin: 0 auto;
+    }
+
+    .link1, .link2, .link3, .link4 {
+        display: none;
+    }
+
+    .footerImgMail, .footerImPhone, .footerImgMobile {
+        display: none;
+    }
+
+    .contacts {
+        margin-left: 0;
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    .contacts > div > span {
+        width: 100%;
+        text-align: center;
+        font-size: 14pt;
+    }
+
+    .contacts > div {
+        height: auto;
+        margin-bottom: 11px;
+    }
+
+    .socialContext {
+        padding-top: 12px;
+        padding-left: 64px;
+
+    }
+
+
+    .contactsLink {
+        justify-content: flex-start;
+    }
+
+    .social {
+        margin: 0;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .social > div {
+        height: auto;
+    }
+
+    .socialIconShell {
+        margin-left: 35px;
+    }
+
+}

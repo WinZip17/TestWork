@@ -1,6 +1,6 @@
 
 .forms {
-    margin-top: 37px;
+    margin-top: 34px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -92,12 +92,14 @@ fieldset > input {
     opacity: 0;
     overflow: hidden;
     z-index: -1;
+    display: none;
 }
 
 
 .inputFile + label {
     display: flex;
     flex-direction: row;
+
 }
 
 .photoName {
@@ -131,7 +133,6 @@ fieldset > input {
     -moz-user-select: none;
     -khtml-user-select: none;
     user-select: none;
-    margin-top: 2px;
     padding-top: 16px;
 }
 
@@ -148,6 +149,10 @@ fieldset > input {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+}
+
+.uploadIcon {
+    display: none;
 }
 
 
@@ -198,42 +203,4 @@ fieldset > input {
     margin-bottom: 35px;
     font-family: 'Source Sans Pro', sans-serif;
     line-height: 1.25;
-}
-
-@media (min-width: 320px) and (max-width: 980px) {
-    .forms {
-        padding-left: 23px;
-        margin-top: 27px;
-    }
-
-    fieldset {
-        width: 220px;
-        margin-bottom: 39px;
-    }
-
-    .forms > fieldset:nth-child(3) {
-        margin-right: 0;
-    }
-
-    .positionShell {
-        width: 345px;
-        padding: 0 13px 0 11px;
-    }
-
-    .photo {
-        width: 345px;
-        margin-right: 0;
-    }
-
-    .photoName {
-        width: 200px;
-    }
-
-    .buttonSell {
-        margin-top: 22px;
-    }
-
-    .congratulationsDiv {
-        left: 35%;
-    }
 }

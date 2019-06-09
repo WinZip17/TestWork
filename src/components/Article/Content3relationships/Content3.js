@@ -1,14 +1,19 @@
 import React from 'react';
 import './Content3.css'
+import './Content3Media.css'
 
 const Content3 = () => {
     return (
         <div id="relationships" className="backgroundAlt3">
             <div className="alt3">
                 <div className="heading3Shell">
-                    <h1  >
+                    <h1 className="heading3Desktop">
                         About my relationships with <br/>
                         <span>web-development</span>
+                    </h1>
+                    <h1 className="heading3Mobile">
+                        About my relationships with
+                        web-development
                     </h1>
                 </div>
                 <div className="alt3Content">

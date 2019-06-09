@@ -64,39 +64,3 @@
     font-size: 10.7pt;
     letter-spacing: -0.01ex;
 }
-
-
-@media (min-width: 320px) and (max-width: 980px) {
-    .user {
-        width: 200px;
-        height: 220px;
-        margin-bottom: 7px;
-    }
-
-    .shell {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .avatarShell {
-        margin: 0 auto;
-        width: 70px;
-        height: 100%;
-    }
-
-    .content {
-        text-align: center;
-    }
-
-    .username {
-        margin-top: 10px;
-    }
-
-    .specialty {
-        margin-top: 5px;
-    }
-
-    .mail {
-        margin-top: 0;
-    }
-}

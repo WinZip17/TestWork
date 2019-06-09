@@ -1,0 +1,31 @@
+/*Tablet*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    .usersList {
+        margin-top: 24px;
+        padding: 0 35px;
+        justify-content: space-between;
+    }
+
+    .alt5Button {
+
+        margin: 0 auto 0;
+    }
+}
+
+/*Mobile*/
+@media (min-width: 320px) and (max-width: 768px) {
+    .usersList {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        padding-left: 0;
+        margin-top: 14px;
+    }
+
+    .alt5Button {
+        margin: 0 auto 0;
+    }
+
+
+}

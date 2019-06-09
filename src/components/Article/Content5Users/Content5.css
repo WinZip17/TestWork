@@ -30,21 +30,6 @@
     width: 100%;
     font-size: 115%;
     letter-spacing: -0.07ex;
+    margin-top: 11px;
+    margin-left: -1px;
 }
-
-@media (min-width: 320px) and (max-width: 980px) {
-    .backgroundAlt5 {
-        width: 768px;
-    }
-
-    .headers5 {
-        margin-top: 116px;
-    }
-
-    .headers5 > h2 {
-        margin-top: 17px;
-        letter-spacing: -0.09ex;
-    }
-}
-
-

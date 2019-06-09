@@ -1,5 +1,5 @@
 .usersList {
-    margin-top: 42px;
+    margin-top: 40px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -17,19 +17,4 @@
 .alt5Button {
     display: flex;
     margin: -53px auto 0;
-}
-
-
-
-@media (min-width: 320px) and (max-width: 980px) {
-    .usersList {
-        margin-top: 24px;
-        padding: 0 35px;
-        justify-content: space-between;
-    }
-
-    .alt5Button {
-
-        margin: 0 auto 0;
-    }
 }

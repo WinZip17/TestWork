@@ -104,11 +104,8 @@ let mapDispatchToProps = (dispatch) => {
             dispatch(updateEmailAC(e.target.value, emailValid));
         },
         updatePhone: (e) => {
-
             let newValue = e.target.value.replace(/[" ", "(", ")","_"]/g,"");
-            debugger
             let phoneValid = newValue.length === 13 ? true : false;
-
             dispatch(updatePhoneAC(newValue, phoneValid));
         },
         showPosition: (positionData) => {

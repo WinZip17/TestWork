@@ -12,11 +12,12 @@
     flex-direction: row;
     justify-Content: flex-start;
     padding-left: 46px;
+
 }
 
 .heading3Shell {
     width: 100%;
-    margin-top: 68px;
+    margin-top: 0;
 }
 
 .alt3 > div > h1 {
@@ -26,9 +27,11 @@
     font-size: 32pt;
     margin-left: -18px;
     margin-bottom: 0;
+    margin-top: 97px;
     letter-spacing: -0.32px;
     line-height: 1.23;
     padding: 0;
+    height: 9px;
 }
 
 .alt3 > div > h1 > span {
@@ -61,7 +64,7 @@
 
 .alt3Content {
     display: flex;
-    height: 400px;
+    height: auto;
     margin-top: 20px;
 }
 
@@ -74,67 +77,6 @@
     width: 215px;
 }
 
-
-@media (min-width: 320px) and (max-width: 980px) {
-    .backgroundAlt3 {
-        width: 768px;
-    }
-
-    .heading3Shell {
-        margin-top: 55px;
-
-    }
-
-    .alt3 > div {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .alt3 > div > h1 {
-
-        letter-spacing: -0.32px;
-        line-height: 1.2;
-        padding: 0;
-    }
-
-    .alt3Content {
-        margin-top: 5px;
-    }
-
-    .alt3Content > div {
-        width: 100%;
-        flex-direction: row;
-        padding-right: 30px;
-    }
-
-    .infoCell {
-        display: flex;
-        flex-direction: row;
-        padding-left: 43px;
-        margin-bottom: 46px;
-    }
-
-    .imgAlt3 {
-        width: 87px;
-    }
-
-    .alt3 > div > div > div > h2 {
-        margin-top: -1px;
-        margin-left: 35px;
-        margin-bottom: 19px;
-    }
-
-    .alt3 > div > div > div > p {
-        margin-left: 35px;
-        margin-bottom: 0;
-    }
-
-    .textAl3Sell {
-        width: 500px;
-    }
-
-    .cssTextAlt3Sell {
-        width: 450px;
-    }
-
+.heading3Mobile {
+    display: none;
 }

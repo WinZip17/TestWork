@@ -1,0 +1,46 @@
+/*Tablet*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    .backgroundAlt6 {
+        width: 768px;
+    }
+
+    .headers6 {
+        margin-top: 135px;
+    }
+
+    .paragraph6 {
+        width: 370px;
+        margin: 5px auto 0;
+    }
+}
+
+/*Mobile*/
+@media (min-width: 320px) and (max-width: 768px) {
+    .backgroundAlt6 {
+        width: 320px;
+    }
+
+    .headers6 {
+        margin-top: 67px;
+    }
+
+    .headers6 > h1 {
+        width: 100%;
+        font-size: 20pt;
+        margin: 0;
+        letter-spacing: -0.03ex;
+    }
+
+    .paragraph6 {
+        width: auto;
+        margin: 10px auto 0;
+        padding: 0 0;
+    }
+
+    .paragraph6 p {
+        width: auto;
+        text-align: center;
+        font-size: 14pt;
+        margin-bottom: 19px;
+    }
+}

@@ -10,7 +10,7 @@
 .alt2 {
     display: flex;
     flex-direction: column;
-
+    width: 1024px;
 }
 
 .heading2Shell {
@@ -21,7 +21,7 @@
 
 }
 
-h2.heading2 {
+.heading2 {
     width: 100%;
     font-size: 263%;
 }
@@ -49,14 +49,14 @@ h2.heading2 {
 
 .alt2Text h4 {
     font-size: 162%;
-    margin-top: 30px;
+    margin-top: 22px;
     margin-bottom: 0;
 }
 
 p.p2 {
     font-size: 105%;
     letter-spacing: -0.32px;
-    margin-top: 8px;
+    margin-top: 6px;
     line-height: 1.3;
 }
 
@@ -67,33 +67,4 @@ p.p2:nth-child(3) {
 /*выравнивание кнопки */
 .alt2Text > .buttonText {
     margin-top: 22px;
-}
-
-
-
-
-@media (min-width: 320px) and (max-width: 980px) {
-    .backgroundAlt2 {
-        width: 768px;
-    }
-
-    .manMobile {
-        margin-left: -10px;
-        width: 225px;
-        height: 220px;
-        margin-top: 22px;
-    }
-
-    h2.heading2 {
-        margin-top: 15px;
-    }
-
-    .alt2Text {
-        margin-top: -5px;
-        margin-left: 273px;
-    }
-
-    p.p2 {
-        margin-top: 14px;
-    }
 }
