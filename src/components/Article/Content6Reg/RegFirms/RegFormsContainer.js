@@ -115,7 +115,6 @@ let mapDispatchToProps = (dispatch) => {
             dispatch(updatePositionAC(e.target.value));
         },
         updatePhoto: (e) => {
-            console.log(e.target.files[0].size + "размер файла");
             let fileName = e.target.value.split('\\').pop();
             let photoValid = e.target.files[0].size > 5120000 ? false : true;
             dispatch(updatePhotoAC(e.target.files[0], fileName, photoValid));
