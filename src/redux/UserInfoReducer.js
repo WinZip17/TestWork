@@ -1,15 +1,17 @@
+import {API} from "../API/api";
+
 const SAVE_USERS = 'SAVE_USERS';
 
-let initialState =   {
+let initialState = {
     superUserInfo: {
-                email: "",
-                id: "",
-                name: "",
-                phone: "",
-                photo: "",
-                position: "",
-                position_id: "",
-                registration_timestamp: 0
+        email: "",
+        id: "",
+        name: "",
+        phone: "",
+        photo: "",
+        position: "",
+        position_id: "",
+        registration_timestamp: 0
     },
     isVisibleMenu: false
 };
@@ -23,6 +25,16 @@ const UserInfoReducer = (state = initialState, action) => {
     }
 };
 
-export const   saveUsersAC = (data) => (  {type: SAVE_USERS, data: data } );
+const saveUsersAC = (data) => ({type: SAVE_USERS, data: data.user});
+
+export const getUsersByIdThunkCreator = (id) => {
+    return (dispatch) => {
+        API.getUserById(id)
+            .then(data => {
+                dispatch(saveUsersAC(data));
+            });
+    }
+};
+
 
 export default UserInfoReducer;

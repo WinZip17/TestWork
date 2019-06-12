@@ -3,21 +3,18 @@ import './UserInfo.css'
 import './UserInfoMedia.css'
 import {connect} from "react-redux";
 import UserInfo from "./UserInfo";
-import {saveUsersAC} from "../../../redux/UserInfoReducer";
-import {API} from "../../../API/api";
+import {getUsersByIdThunkCreator} from "../../../redux/UserInfoReducer";
+
 
 class UserListData extends React.Component {
 
     componentDidMount() {
-
-        API.getUserById(1)
-            .then(data => {
-                this.props.saveUsers(data);
-            });
+        this.props.getUsersById(1);
     }
 
     render() {
-        return this.props.state.userInfo.superUserInfo.position_id ?  <UserInfo user={this.props.state.userInfo.superUserInfo} buttonOut={this.props.buttonOut}/> : <div></div>
+        return this.props.state.userInfo.superUserInfo.position_id ?
+            <UserInfo user={this.props.state.userInfo.superUserInfo} buttonOut={this.props.buttonOut}/> : <div></div>
 
     }
 }
@@ -29,9 +26,10 @@ let mapStateToProps = (state) => {
 };
 
 let mapDispatchToProps = (dispatch) => {
+
     return {
-        saveUsers: (data) => {
-            dispatch(saveUsersAC(data.user));
+        getUsersById: (id) => {
+            dispatch(getUsersByIdThunkCreator(id));
         },
         buttonOut: () => {
             alert('Сорри, выхода нет :(')

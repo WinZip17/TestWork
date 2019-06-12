@@ -15,8 +15,7 @@ let singUp = {
     setIsVisible: props.setIsVisible,
     clearInfoUser: props.clearInfoUser,
     resetList: props.resetList,
-    showList: props.showList,
-    addElementsList: props.addElementsList
+    getUsers: props.getUsers
 };
     return (
         <div>

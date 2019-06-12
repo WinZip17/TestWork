@@ -39,16 +39,6 @@ export const API = {
         formData.append('phone', singUp.data.phone);
         formData.append('photo', singUp.data.photo);
 
-        // instance.post('users', {formData}, {method: 'POST', headers: {'Token': singUp.data.token}})
-        //     .then(response => {
-        //         debugger;
-        //         RegistResult(formData, singUp.setIsVisible, singUp.clearInfoUser, singUp.resetList, singUp.showList, singUp.addElementsList, response)
-        //         // registResult(response)
-        //     })
-        //     .catch(function(error) {
-        //         debugger
-        //            });
-
         fetch('https://frontend-test-assignment-api.abz.agency/api/v1/users', {
             method: 'POST',
             body: formData,
@@ -61,7 +51,7 @@ export const API = {
             })
             .then(function (data) {
                 if (data.success) {
-                    RegistResult(formData, singUp.setIsVisible, singUp.clearInfoUser, singUp.resetList, singUp.showList, singUp.addElementsList, data)
+                    RegistResult(formData, singUp.setIsVisible, singUp.clearInfoUser, singUp.resetList, singUp.getUsers, data)
                 } else {
                     // proccess server errors
                 }

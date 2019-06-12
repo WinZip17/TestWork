@@ -2,17 +2,14 @@ import React from 'react';
 import './UserListInfo.css'
 import UserListInfo from "./UserListInfo";
 import {connect} from "react-redux";
-import {addElementsUserListAC, showMoreUsersAC, showUsersAC} from "../../../../redux/UserListReducer";
-import {API} from "../../../../API/api";
+import {
+    getUsersThunkCreator, showUsersThunkCreator
+} from "../../../../redux/UserListReducer";
 
 export class UserListData extends React.Component {
 
     componentDidMount() {
-        API.getUsers(1)
-            .then(data => {
-                this.props.showUsers(data);
-                this.props.addElementsUserList(data);
-            })
+        this.props.getUsersThunk(1);
     }
 
     render() {
@@ -28,17 +25,11 @@ let mapStateToProps = (state) => {
 
 let mapDispatchToProps = (dispatch) => {
     return {
-        showUsers: (data) => {
-            dispatch(showUsersAC(data));
+        getUsersThunk: (data) => {
+            dispatch(getUsersThunkCreator(data));
         },
         showMoreUsers: (page) => {
-            API.getUsers(page)
-                .then(data => {
-                    return dispatch(showMoreUsersAC(page, data));
-                })
-        },
-        addElementsUserList: (serverData) => {
-            dispatch(addElementsUserListAC(serverData));
+            dispatch(showUsersThunkCreator(page))
         },
     }
 };

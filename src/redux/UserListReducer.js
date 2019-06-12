@@ -1,9 +1,11 @@
+import {API} from "../API/api";
+
 const SHOW_USERS = 'SHOW_USERS';
 const SHOW_MORE = 'SHOW_MORE';
 const ADD_ELEMENTS_USER_LIST = 'ADD_ELEMENTS_USER_LIST';
 const RESET_USER_LIST = 'RESET_USER_LIST';
 
-let initialState =   {
+let initialState = {
     serverData: {
         count: 0,
         links: {
@@ -64,15 +66,33 @@ const UserListReducer = (state = initialState, action) => {
         case ADD_ELEMENTS_USER_LIST:
             return {...state, userElementsList: action.serverData, lastPage: action.serverData.page};
         case SHOW_MORE:
-            return  {...state, ...state.userElementsList.users = [...state.userElementsList.users, ...action.data.users], ...state.lastPage = action.page+1};
+            return {...state, ...state.userElementsList.users = [...state.userElementsList.users, ...action.data.users], ...state.lastPage = action.page + 1};
         default:
             return state;
     }
 };
 
-export const   showUsersAC = (data) => (  {type: SHOW_USERS, data: data } );
-export const   addElementsUserListAC = (serverData) => (  {type: ADD_ELEMENTS_USER_LIST, serverData: serverData } );
-export const   showMoreUsersAC = (page, data) => ( {type: SHOW_MORE, page: page, data: data} );
-export const   resetUserListAC = () => ( {type: RESET_USER_LIST} );
+const showUsersAC = (data) => ({type: SHOW_USERS, data: data});
+const addElementsUserListAC = (serverData) => ({type: ADD_ELEMENTS_USER_LIST, serverData: serverData});
+const showMoreUsersAC = (page, data) => ({type: SHOW_MORE, page: page, data: data});
+
+export const getUsersThunkCreator = (page) => {
+    return (dispatch) => {
+        API.getUsers(page)
+            .then(data => {
+                dispatch(showUsersAC(data));
+                dispatch(addElementsUserListAC(data));
+            })
+    }
+};
+
+export const showUsersThunkCreator = (page) => {
+    return (dispatch) => {
+        API.getUsers(page)
+            .then(data => {
+                return dispatch(showMoreUsersAC(page, data));
+            })
+    }
+};
 
 export default UserListReducer;

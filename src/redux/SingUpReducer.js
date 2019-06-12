@@ -1,3 +1,5 @@
+import {API} from "../API/api";
+
 const SET_TOKEN = 'SET_TOKEN';
 const UPDATE_NAME = 'UPDATE_NAME';
 const UPDATE_EMAIL = 'UPDATE_EMAIL';
@@ -18,11 +20,17 @@ let initialState = {
     photo_file_name: "Upload your photo",
     position_id: "",
     position_data: {
-        positions:[],
+        positions: [],
         success: false
     },
     validations: {
-        formErrors: {email: "email is not correct", name: "Your name is not correct ", phone: "phone number is not correct", photo: "photo does not meet the requirements", position_id: ""},
+        formErrors: {
+            email: "email is not correct",
+            name: "Your name is not correct ",
+            phone: "phone number is not correct",
+            photo: "photo does not meet the requirements",
+            position_id: ""
+        },
         emailValid: true,
         nameValid: true,
         phoneValid: true,
@@ -39,7 +47,7 @@ const SingUpUsers = (state = initialState, action) => {
         case SET_TOKEN:
             return {...state, token: action.token};
         case UPDATE_NAME:
-            return {...state, name: action.name, ...state.validations.nameValid = action.nameValid };
+            return {...state, name: action.name, ...state.validations.nameValid = action.nameValid};
         case UPDATE_EMAIL:
             return {...state, email: action.email, ...state.validations.emailValid = action.emailValid};
         case UPDATE_PHONE:
@@ -49,7 +57,11 @@ const SingUpUsers = (state = initialState, action) => {
         case SHOW_POSITION:
             return {...state, position_data: action.positionData};
         case UPDATE_PHOTO:
-            return {...state, photo: action.photo, photo_file_name: action.fileName, ...state.validations.photoValid = action.photoValid};
+            return {
+                ...state,
+                photo: action.photo,
+                photo_file_name: action.fileName, ...state.validations.photoValid = action.photoValid
+            };
         case CLEAR_INFO_USER:
             return {...initialState};
         case SET_IS_VISIBLE:
@@ -59,22 +71,43 @@ const SingUpUsers = (state = initialState, action) => {
     }
 
 };
-
-export const   setTokenAC = (token) => ( {type: SET_TOKEN, token: token} );
-export const   updateNameAC = (name, nameValid) => ( {type: UPDATE_NAME, name: name, nameValid: nameValid} );
-export const   updateEmailAC = (email, emailValid) => ( {type: UPDATE_EMAIL, email: email, emailValid: emailValid} );
-export const   updatePhoneAC = (phone, phoneValid) => ( {type: UPDATE_PHONE, phone: phone, phoneValid: phoneValid} );
-export const   showPositionAC = (positionData) => ( {type: SHOW_POSITION, positionData: positionData} );
-export const   updatePositionAC = (position_id) => ( {type: UPDATE_POSITION, position_id: position_id} );
-export const   updatePhotoAC = (photo, fileName, photoValid) => ( {type: UPDATE_PHOTO, photo: photo, fileName: fileName, photoValid: photoValid} );
-export const   clearInfiUserAC = () => ( {type: CLEAR_INFO_USER});
-export const   setIsVisibleAC = (setIsVisible) => ( {type: SET_IS_VISIBLE, setIsVisible: setIsVisible});
+const showPositionAC = (positionData) => ({type: SHOW_POSITION, positionData: positionData});
+const setTokenAC = (token) => ({type: SET_TOKEN, token: token});
+export const updateNameAC = (name, nameValid) => ({type: UPDATE_NAME, name: name, nameValid: nameValid});
+export const updateEmailAC = (email, emailValid) => ({type: UPDATE_EMAIL, email: email, emailValid: emailValid});
+export const updatePhoneAC = (phone, phoneValid) => ({type: UPDATE_PHONE, phone: phone, phoneValid: phoneValid});
+export const updatePositionAC = (position_id) => ({type: UPDATE_POSITION, position_id: position_id});
+export const updatePhotoAC = (photo, fileName, photoValid) => ({
+    type: UPDATE_PHOTO,
+    photo: photo,
+    fileName: fileName,
+    photoValid: photoValid
+});
+export const clearInfiUserAC = () => ({type: CLEAR_INFO_USER});
+export const setIsVisibleAC = (setIsVisible) => ({type: SET_IS_VISIBLE, setIsVisible: setIsVisible});
 
 
 //экшены на сброс показаных пользователей и отоброжение новых, работают с UserInfoReducer!!!!!
-export const   resetListAC = () => ( {type: "RESET_USER_LIST"} );
-export const   showListAC = (data) => (  {type: "SHOW_USERS", data: data } );
-export const   addElementsListAC = (serverData) => (  {type: "ADD_ELEMENTS_USER_LIST", serverData: serverData } );
+export const resetListAC = () => ({type: "RESET_USER_LIST"});
+
+
+export const getTokenThunkCreator = () => {
+    return (dispatch) => {
+        API.getToken()
+            .then(data => {
+                dispatch(setTokenAC(data));
+            })
+    }
+};
+
+export const getPositionThunkCreator = () => {
+    return (dispatch) => {
+        API.getPositions()
+            .then(data => {
+                dispatch(showPositionAC(data));
+            });
+    }
+};
 
 
 export default SingUpUsers;
