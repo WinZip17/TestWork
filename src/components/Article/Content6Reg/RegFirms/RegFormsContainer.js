@@ -1,6 +1,5 @@
 import React from 'react';
 import {connect} from "react-redux";
-import RegForms from "./RegForms";
 import {
     clearInfiUserAC, getPositionThunkCreator, getTokenThunkCreator, resetListAC,
     setIsVisibleAC, updateEmailAC, updateNameAC,
@@ -8,6 +7,7 @@ import {
 } from "../../../../redux/SingUpReducer";
 import Successfully from "./SuccessfullyRegistered";
 import {getUsersThunkCreator} from "../../../../redux/UserListReducer";
+import RegFormsRedux from "./RegForms";
 
 
 // Проверка на валидность информации для активации кнопки
@@ -37,6 +37,10 @@ export const RegistResult = (data, setIsVisible, clearInfoUser, resetList, getUs
 
 
 class RegFormsData extends React.Component {
+    submit = (formData) => {
+        console.log(formData)
+    }
+
 
     componentDidMount() {
         this.props.showPosition();
@@ -44,7 +48,9 @@ class RegFormsData extends React.Component {
     }
 
     render() {
-        return <div><RegForms
+        return <div><RegFormsRedux
+
+            onSubmit={this.submit}
             newUser={this.props.state.newUser}
             updateName={this.props.updateName}
             updateEmail={this.props.updateEmail}

@@ -6,6 +6,7 @@ import {regUsersValidation} from "./RegFormsContainer";
 import LegendErrors from "./LegendErrors";
 import InputMask  from 'react-input-mask';
 import {upload} from "../../../media/SVG";
+import {Field, reduxForm} from "redux-form";
 
 
 const RegForms = (props) => {
@@ -19,15 +20,17 @@ let singUp = {
 };
     return (
         <div>
-            <form className={`${stl.forms} ${stlMedia.forms}`}>
+            <form onSubmit={props.handleSubmit} className={`${stl.forms} ${stlMedia.forms}`}>
                 <fieldset className={props.newUser.validations.nameValid ? "" : stl.formsError}>
                     <legend className={`${stl.Legend} ${stlMedia.Legend}`}>Name</legend>
-                    <input id='signUp' onChange={props.updateName} type="text" placeholder="Your name" value={props.newUser.name}/>
+                    <Field name={'name'} placeholder="Your name" id='signUp' component="input" type="text" />
+                    {/*<input onChange={props.updateName} type="text" placeholder="Your name" value={props.newUser.name}/>*/}
                     <LegendErrors formErrors={props.newUser.validations.nameValid ? "" : props.newUser.validations.formErrors.name}/>
                 </fieldset>
                 <fieldset className={props.newUser.validations.emailValid ? "" : stl.formsError}>
                     <legend className={`${stl.Legend} ${stlMedia.Legend}`}>Email</legend>
-                    <input onChange={props.updateEmail} type="text" placeholder="Your email" value={props.newUser.email} />
+                    <Field name={'email'} placeholder="Your email" component="input" type="text" />
+                    {/*<input onChange={props.updateEmail} type="text" placeholder="Your email" value={props.newUser.email} />*/}
                     <LegendErrors formErrors={props.newUser.validations.emailValid ? "" : props.newUser.validations.formErrors.email}/>
                 </fieldset>
                 <fieldset className={props.newUser.validations.phoneValid ? "" : stl.formsError}>
@@ -52,6 +55,7 @@ let singUp = {
                     <p className={`${stl.commentPhoto} ${stlMedia.commentPhoto}`}> File format jpg up to 5 MB, the minimum size of
                         70x70px</p>
                 </fieldset>
+                <button>test button</button>
             </form>
             <div className={`${stl.buttonSell} ${stlMedia.buttonSell}`}>
                 {regUsersValidation(props)
@@ -61,5 +65,9 @@ let singUp = {
     )
 };
 
+const RegFormsRedux = reduxForm({
+    // a unique name for the form
+    form: 'gerUser'
+})(RegForms);
 
-export default RegForms;
+export default RegFormsRedux;
