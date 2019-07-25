@@ -3,6 +3,7 @@ import stl from './UserInfoForList.module.css';
 import stlMedia from './UserInfoForListMedia.module.css';
 
 const UserInfoForList = (props) => {
+
     return (
         <div className={`${stl.user} ${stlMedia.user}`}>
             <div className={`${stl.shell} ${stlMedia.shell}`}>

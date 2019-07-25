@@ -7,7 +7,12 @@ import LegendErrors from "./LegendErrors";
 import InputMask  from 'react-input-mask';
 import {upload} from "../../../media/SVG";
 import {Field, reduxForm} from "redux-form";
+import {createTextMask} from "redux-form-input-masks";
 
+
+const phoneMask = createTextMask({
+    pattern: '+380(99) 999 99 99',
+});
 
 const RegForms = (props) => {
 
@@ -35,14 +40,15 @@ let singUp = {
                 </fieldset>
                 <fieldset className={props.newUser.validations.phoneValid ? "" : stl.formsError}>
                     <legend className={`${stl.Legend} ${stlMedia.Legend}`}>Phone</legend>
-                    <InputMask onChange={props.updatePhone} type="text" mask='+380(99) 999 99 99'  maskChar="_" placeholder="+380(__) ___ __ __" value={props.newUser.phone} />
+                    <Field name={'phone'} placeholder="+380(__) ___ __ __" component="input"  type="tel" {...phoneMask}/>
+                    {/*<InputMask onChange={props.updatePhone} type="text" mask='+380(99) 999 99 99'  maskChar="_" placeholder="+380(__) ___ __ __" value={props.newUser.phone} />*/}
                     <LegendErrors formErrors={props.newUser.validations.phoneValid ? "" : props.newUser.validations.formErrors.phone}/>
                 </fieldset>
                 <fieldset className={`${stl.positionShell} ${stlMedia.positionShell}`}>
-                    <select  onChange={props.updatePosition} className={`${stl.position} ${stlMedia.position}`}>
+                    <Field name={'position'} component="select" className={`${stl.position} ${stlMedia.position}`}>
                         <option> Select your position </option>
                         {props.newUser.position_data.positions.map((p) => <option key={p.id} value={p.id}> {p.name} </option>) }
-                    </select>
+                    </Field>
                 </fieldset>
                 <fieldset className={`${stl.photo} ${stlMedia.photo}`}>
                     <input onChange={props.updatePhoto} type="file" className={`${stl.inputFile} ${stlMedia.inputFile}`} name="file" id="file" accept="image/jpeg"
