@@ -14,10 +14,21 @@ const phoneMask = createTextMask({
 });
 
 
-const file_upload= ({ input, type, meta: { touched, error, warning } }) => {
+// const file_upload = ({ input, type, meta: { touched, error, warning } } ) => {
+//     debugger
+//     delete input.value;
+//     return (
+//         <input id="photo" className={`${stl.inputFile} ${stlMedia.inputFile}`} {...input} type={type}/>
+//     )
+// };
+
+const file_upload = ({ input, type, meta: { touched, error, warning }, updatePhoto } ) => {
+
     delete input.value;
+
+    // updatePhoto(input);
     return (
-                <input id="file" className={`${stl.inputFile} ${stlMedia.inputFile}`} {...input} type={type}/>
+                <input id="photo"  className={`${stl.inputFile} ${stlMedia.inputFile}`} {...input} type={type}/>
     )
 };
 
@@ -30,6 +41,8 @@ let singUp = {
     resetList: props.resetList,
     getUsers: props.getUsers
 };
+
+
     return (
         <div>
             <form onSubmit={props.handleSubmit} className={`${stl.forms} ${stlMedia.forms}`}>
@@ -61,9 +74,9 @@ let singUp = {
                 <fieldset className={`${stl.photo} ${stlMedia.photo}`}>
                     {/*<input onChange={props.updatePhoto} type="file" className={`${stl.inputFile} ${stlMedia.inputFile}`} name="file" id="file" accept="image/jpeg"*/}
                     {/*       data-multiple-caption="{count} files selected"/>*/}
-                    <Field name="file"  accept="image/jpeg" data-multiple-caption="{count} files selected" component={file_upload} type="file" />
-                    <label htmlFor="file">
-                        <span className={`${stl.photoName} ${stlMedia.photoName}`}>{props.newUser.photo_file_name}</span>
+                    <Field name="photo" updatePhoto={props.updatePhoto} accept="image/jpeg" data-multiple-caption="{count} files selected" component={file_upload} type="file" />
+                    <label htmlFor="photo">
+                        {/*{props.form.getUser.value? <span className={`${stl.photoName} ${stlMedia.photoName}`}>{props.form.getUser.value.photo.FileList[0].name}</span> : <span/>}*/}
                         <strong className={`${stl.buttonUpload} ${stlMedia.buttonUpload}`}><span className={`${stl.uploadText} ${stlMedia.uploadText}`}>Upload </span> <span className={`${stl.uploadIcon} ${stlMedia.uploadIcon}`}>{upload}</span> </strong>
                     </label>
                     <LegendErrors formErrors={props.newUser.validations.photoValid ? "" : props.newUser.validations.formErrors.photo}/>
@@ -83,7 +96,7 @@ let singUp = {
 
 const RegFormsRedux = reduxForm({
     // a unique name for the form
-    form: 'gerUser'
+    form: 'infoUser'
 })(RegForms);
 
 export default RegFormsRedux;

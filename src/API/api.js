@@ -1,5 +1,5 @@
 import * as axios from "axios";
-import {RegistResult} from "../components/Article/Content6Reg/RegFirms/RegFormsContainer";
+import {RegistResult} from "../components/Article/Content6Reg/RegForms/RegFormsContainer";
 
 const instance = axios.create({
     baseURL: 'https://frontend-test-assignment-api.abz.agency/api/v1/',
