@@ -4,7 +4,6 @@ import stlMedia from './RegFormsMedia.module.css';
 import {API} from "../../../../API/api";
 import {regUsersValidation} from "./RegFormsContainer";
 import LegendErrors from "./LegendErrors";
-import InputMask  from 'react-input-mask';
 import {upload} from "../../../media/SVG";
 import {Field, reduxForm} from "redux-form";
 import {createTextMask} from "redux-form-input-masks";
@@ -13,6 +12,14 @@ import {createTextMask} from "redux-form-input-masks";
 const phoneMask = createTextMask({
     pattern: '+380(99) 999 99 99',
 });
+
+
+const file_upload= ({ input, type, meta: { touched, error, warning } }) => {
+    delete input.value;
+    return (
+                <input id="file" className={`${stl.inputFile} ${stlMedia.inputFile}`} {...input} type={type}/>
+    )
+};
 
 const RegForms = (props) => {
 
@@ -50,9 +57,11 @@ let singUp = {
                         {props.newUser.position_data.positions.map((p) => <option key={p.id} value={p.id}> {p.name} </option>) }
                     </Field>
                 </fieldset>
+
                 <fieldset className={`${stl.photo} ${stlMedia.photo}`}>
-                    <input onChange={props.updatePhoto} type="file" className={`${stl.inputFile} ${stlMedia.inputFile}`} name="file" id="file" accept="image/jpeg"
-                           data-multiple-caption="{count} files selected"/>
+                    {/*<input onChange={props.updatePhoto} type="file" className={`${stl.inputFile} ${stlMedia.inputFile}`} name="file" id="file" accept="image/jpeg"*/}
+                    {/*       data-multiple-caption="{count} files selected"/>*/}
+                    <Field name="file"  accept="image/jpeg" data-multiple-caption="{count} files selected" component={file_upload} type="file" />
                     <label htmlFor="file">
                         <span className={`${stl.photoName} ${stlMedia.photoName}`}>{props.newUser.photo_file_name}</span>
                         <strong className={`${stl.buttonUpload} ${stlMedia.buttonUpload}`}><span className={`${stl.uploadText} ${stlMedia.uploadText}`}>Upload </span> <span className={`${stl.uploadIcon} ${stlMedia.uploadIcon}`}>{upload}</span> </strong>
@@ -61,6 +70,7 @@ let singUp = {
                     <p className={`${stl.commentPhoto} ${stlMedia.commentPhoto}`}> File format jpg up to 5 MB, the minimum size of
                         70x70px</p>
                 </fieldset>
+
                 <button>test button</button>
             </form>
             <div className={`${stl.buttonSell} ${stlMedia.buttonSell}`}>

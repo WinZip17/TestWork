@@ -38,7 +38,7 @@ export const RegistResult = (data, setIsVisible, clearInfoUser, resetList, getUs
 
 class RegFormsData extends React.Component {
     submit = (formData) => {
-        formData.phone = `+380${formData.phone}`;
+        // formData.phone = `+380${formData.phone}`;
         console.log(formData)
     }
 
