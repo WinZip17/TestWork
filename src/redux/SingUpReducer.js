@@ -59,8 +59,7 @@ const SingUpUsers = (state = initialState, action) => {
         case UPDATE_PHOTO:
             return {
                 ...state,
-                photo: action.photo,
-                photo_file_name: action.fileName, ...state.validations.photoValid = action.photoValid
+                photo_file_name: action.fileName
             };
         case CLEAR_INFO_USER:
             return {...initialState};
@@ -77,11 +76,15 @@ export const updateNameAC = (name, nameValid) => ({type: UPDATE_NAME, name: name
 export const updateEmailAC = (email, emailValid) => ({type: UPDATE_EMAIL, email: email, emailValid: emailValid});
 export const updatePhoneAC = (phone, phoneValid) => ({type: UPDATE_PHONE, phone: phone, phoneValid: phoneValid});
 export const updatePositionAC = (position_id) => ({type: UPDATE_POSITION, position_id: position_id});
-export const updatePhotoAC = (photo, fileName, photoValid) => ({
+// export const updatePhotoAC = (photo, fileName, photoValid) => ({
+//     type: UPDATE_PHOTO,
+//     photo: photo,
+//     fileName: fileName,
+//     photoValid: photoValid
+// });
+export const updatePhotoAC = (fileName) => ({
     type: UPDATE_PHOTO,
-    photo: photo,
-    fileName: fileName,
-    photoValid: photoValid
+    fileName: fileName
 });
 export const clearInfiUserAC = () => ({type: CLEAR_INFO_USER});
 export const setIsVisibleAC = (setIsVisible) => ({type: SET_IS_VISIBLE, setIsVisible: setIsVisible});

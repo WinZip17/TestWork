@@ -42,16 +42,27 @@ class RegFormsData extends React.Component {
         console.log(formData)
     }
 
+    componentDidUpdate(event) {
+        let fileName = this.props.state.form.infoUser;
+        if (this.props.state.newUser.photo_file_name === "Upload your photo" && "values" in fileName && "photo" in fileName.values) this.props.updatePhoto(fileName.values.photo[0].name);
+    }
+
+    // fileName = {name: this.props.forms.infoUser};
+    // fileText = (fileName) => {
+    //     return "values" in fileName ? fileName.values.photo.FileList[0].name : "2";
+    // }
 
     componentDidMount() {
         this.props.showPosition();
         this.props.getToken();
+        // this.fileText(this.fileText);
     }
 
     render() {
         return <div><RegFormsRedux
 
             onSubmit={this.submit}
+            forms={this.props.state.form}
             newUser={this.props.state.newUser}
             updateName={this.props.updateName}
             updateEmail={this.props.updateEmail}
@@ -101,11 +112,12 @@ let mapDispatchToProps = (dispatch) => {
         updatePosition: (e) => {
             dispatch(updatePositionAC(e.target.value));
         },
-        updatePhoto: (e) => {
-
-            let fileName = e.target.value.split('\\').pop();
-            let photoValid = e.target.files[0].size > 5120000 ? false : true;
-            dispatch(updatePhotoAC(e.target.files[0], fileName, photoValid));
+        updatePhoto: (fileName) => {
+            debugger
+            // let fileName = e.target.value.split('\\').pop();
+            // let photoValid = e.target.files[0].size > 5120000 ? false : true;
+            // dispatch(updatePhotoAC(e.target.files[0], fileName, photoValid));
+            dispatch(updatePhotoAC(fileName));
         },
         setIsVisible: (setIsVisible) => {
             dispatch(setIsVisibleAC(setIsVisible));

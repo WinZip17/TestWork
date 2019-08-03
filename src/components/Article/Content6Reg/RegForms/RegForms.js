@@ -15,13 +15,10 @@ const phoneMask = createTextMask({
 
 
 class RegForms extends Component {
-    constructor(props) {
-        super(props);
-        this.fileInput = React.createRef();
-    }
 
 
     render() {
+
 
 
         let singUp = {
@@ -31,8 +28,9 @@ class RegForms extends Component {
             resetList: this.props.resetList,
             getUsers: this.props.getUsers
         };
-debugger
-        
+
+
+
         return (
             <div>
                 <form onSubmit={this.props.handleSubmit} className={`${stl.forms} ${stlMedia.forms}`}>
@@ -69,10 +67,10 @@ debugger
                     <fieldset className={`${stl.photo} ${stlMedia.photo}`}>
                         {/*<input onChange={props.updatePhoto} type="file" className={`${stl.inputFile} ${stlMedia.inputFile}`} name="file" id="file" accept="image/jpeg"*/}
                         {/*       data-multiple-caption="{count} files selected"/>*/}
-                        <Field fileInput={this.fileInput} name="photo" updatePhoto={this.props.updatePhoto} accept="image/jpeg"
+                        <Field  name="photo" accept="image/jpeg" updatePhoto={this.props.updatePhoto}
                                data-multiple-caption="{count} files selected" component={file_upload} type="file"/>
                         <label htmlFor="photo">
-                            {/*{props.form.getUser.value? <span className={`${stl.photoName} ${stlMedia.photoName}`}>{props.form.getUser.value.photo.FileList[0].name}</span> : <span/>}*/}
+                            <span className={`${stl.photoName} ${stlMedia.photoName}`}>{singUp.data.photo_file_name}</span>
                             <strong className={`${stl.buttonUpload} ${stlMedia.buttonUpload}`}><span
                                 className={`${stl.uploadText} ${stlMedia.uploadText}`}>Upload </span> <span
                                 className={`${stl.uploadIcon} ${stlMedia.uploadIcon}`}>{upload}</span> </strong>
@@ -84,7 +82,6 @@ debugger
                             70x70px</p>
                     </fieldset>
                     <button>test button</button>
-                    <div>{this.fileInput.current === null ? "1" : "3"}</div>
                 </form>
                 <div className={`${stl.buttonSell} ${stlMedia.buttonSell}`}>
                     {regUsersValidation(this.props)
@@ -98,17 +95,12 @@ debugger
 }
 
 
-
-const file_upload = ({ fileInput,input, type, meta: { touched, error, warning }, updatePhoto } ) => {
-debugger
-    // let fileName = React.createRef();
+const file_upload = ({input, type, meta: {touched, error, warning}, updatePhoto}) => {
     delete input.value;
 
-    // updatePhoto(input);
     return (
-<div>
-    <input id="photo" ref={fileInput} className={`${stl.inputFile} ${stlMedia.inputFile}`} {...input} type={type}/>
-</div>
+            <input onChange={updatePhoto} id="photo" className={`${stl.inputFile} ${stlMedia.inputFile}`} {...input}
+                   type={type}/>
     )
 };
 
