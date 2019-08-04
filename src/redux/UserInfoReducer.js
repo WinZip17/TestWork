@@ -33,7 +33,7 @@ export const getUsersByIdThunkCreator = (id) => {
             .then(data => {
                 dispatch(saveUsersAC(data));
             });
-    }
+    };
 };
 
 

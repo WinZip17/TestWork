@@ -1,6 +1,6 @@
 import React from 'react';
-import './Content6.css'
-import './Content6Media.css'
+import './Content6.css';
+import './Content6Media.css';
 import RegFormsContainer from "./RegForms/RegFormsContainer";
 
 const Content6 = () => {

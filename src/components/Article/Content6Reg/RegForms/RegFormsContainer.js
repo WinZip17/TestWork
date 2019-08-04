@@ -37,44 +37,36 @@ export const RegistResult = (data, setIsVisible, clearInfoUser, resetList, getUs
 
 
 class RegFormsData extends React.Component {
+
     submit = (formData) => {
         // formData.phone = `+380${formData.phone}`;
         console.log(formData)
-    }
+    };
 
     componentDidUpdate(event) {
+        //отоброжение выбраного файла фотки
         let fileName = this.props.state.form.infoUser;
-        if (this.props.state.newUser.photo_file_name === "Upload your photo" && "values" in fileName && "photo" in fileName.values) this.props.updatePhoto(fileName.values.photo[0].name);
-    }
+        if ("values" in fileName && "photo" in fileName.values && fileName.values.photo[0].name != this.props.state.newUser.photo_file_name) this.props.updatePhoto(fileName.values.photo[0].name);
+    };
 
-    // fileName = {name: this.props.forms.infoUser};
-    // fileText = (fileName) => {
-    //     return "values" in fileName ? fileName.values.photo.FileList[0].name : "2";
-    // }
 
     componentDidMount() {
         this.props.showPosition();
         this.props.getToken();
-        // this.fileText(this.fileText);
-    }
+    };
 
     render() {
         return <div><RegFormsRedux
-
             onSubmit={this.submit}
             forms={this.props.state.form}
             newUser={this.props.state.newUser}
-            updateName={this.props.updateName}
-            updateEmail={this.props.updateEmail}
-            updatePhone={this.props.updatePhone}
             showPosition={this.props.showPosition}
-            updatePosition={this.props.updatePosition}
             updatePhoto={this.props.updatePhoto}
             setIsVisible={this.props.setIsVisible}
             clearInfoUser={this.props.clearInfoUser}
             resetList={this.props.resetList}
             getUsers={this.props.getUsers}/>
-            {this.props.state.newUser.isVisible ? <Successfully isVisible={this.props.setIsVisible}/> : <div/>}
+            {this.props.state.newUser.isVisible && <Successfully isVisible={this.props.setIsVisible}/>}
         </div>
     }
 }
@@ -85,10 +77,8 @@ let mapStateToProps = (state) => {
     }
 };
 
-
 //перед диспатчем валидация
 let mapDispatchToProps = (dispatch) => {
-
     return {
         getToken: () => {
             dispatch(getTokenThunkCreator());
@@ -113,10 +103,6 @@ let mapDispatchToProps = (dispatch) => {
             dispatch(updatePositionAC(e.target.value));
         },
         updatePhoto: (fileName) => {
-            debugger
-            // let fileName = e.target.value.split('\\').pop();
-            // let photoValid = e.target.files[0].size > 5120000 ? false : true;
-            // dispatch(updatePhotoAC(e.target.files[0], fileName, photoValid));
             dispatch(updatePhotoAC(fileName));
         },
         setIsVisible: (setIsVisible) => {

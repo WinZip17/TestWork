@@ -1,6 +1,6 @@
 import React from 'react';
-import './Content5.css'
-import './Content5Media.css'
+import './Content5.css';
+import './Content5Media.css';
 import UserListInfoContainer from "./UserList/UserListInfoContainer";
 
 

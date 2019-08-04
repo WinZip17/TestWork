@@ -1,5 +1,5 @@
 import React from 'react';
-import './Article.css'
+import './Article.css';
 import Content1 from "./Content1/Content1";
 import Content2 from "./Content2/Content2";
 import Content3 from "./Content3relationships/Content3";

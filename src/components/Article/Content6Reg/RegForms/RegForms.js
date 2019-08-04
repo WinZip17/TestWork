@@ -8,18 +8,9 @@ import {upload} from "../../../media/SVG";
 import {Field, reduxForm} from "redux-form";
 import {createTextMask} from "redux-form-input-masks";
 
-
-const phoneMask = createTextMask({
-    pattern: '+380(99) 999 99 99',
-});
-
-
 class RegForms extends Component {
 
-
     render() {
-
-
 
         let singUp = {
             data: this.props.newUser,
@@ -29,22 +20,18 @@ class RegForms extends Component {
             getUsers: this.props.getUsers
         };
 
-
-
         return (
             <div>
                 <form onSubmit={this.props.handleSubmit} className={`${stl.forms} ${stlMedia.forms}`}>
                     <fieldset className={this.props.newUser.validations.nameValid ? "" : stl.formsError}>
                         <legend className={`${stl.Legend} ${stlMedia.Legend}`}>Name</legend>
                         <Field name={'name'} placeholder="Your name" id='signUp' component="input" type="text"/>
-                        {/*<input onChange={props.updateName} type="text" placeholder="Your name" value={props.newUser.name}/>*/}
                         <LegendErrors
                             formErrors={this.props.newUser.validations.nameValid ? "" : this.props.newUser.validations.formErrors.name}/>
                     </fieldset>
                     <fieldset className={this.props.newUser.validations.emailValid ? "" : stl.formsError}>
                         <legend className={`${stl.Legend} ${stlMedia.Legend}`}>Email</legend>
                         <Field name={'email'} placeholder="Your email" component="input" type="text"/>
-                        {/*<input onChange={props.updateEmail} type="text" placeholder="Your email" value={props.newUser.email} />*/}
                         <LegendErrors
                             formErrors={this.props.newUser.validations.emailValid ? "" : this.props.newUser.validations.formErrors.email}/>
                     </fieldset>
@@ -52,7 +39,6 @@ class RegForms extends Component {
                         <legend className={`${stl.Legend} ${stlMedia.Legend}`}>Phone</legend>
                         <Field name={'phone'} placeholder="+380(__) ___ __ __" component="input"
                                type="tel" {...phoneMask}/>
-                        {/*<InputMask onChange={props.updatePhone} type="text" mask='+380(99) 999 99 99'  maskChar="_" placeholder="+380(__) ___ __ __" value={props.newUser.phone} />*/}
                         <LegendErrors
                             formErrors={this.props.newUser.validations.phoneValid ? "" : this.props.newUser.validations.formErrors.phone}/>
                     </fieldset>
@@ -65,12 +51,11 @@ class RegForms extends Component {
                     </fieldset>
 
                     <fieldset className={`${stl.photo} ${stlMedia.photo}`}>
-                        {/*<input onChange={props.updatePhoto} type="file" className={`${stl.inputFile} ${stlMedia.inputFile}`} name="file" id="file" accept="image/jpeg"*/}
-                        {/*       data-multiple-caption="{count} files selected"/>*/}
-                        <Field  name="photo" accept="image/jpeg" updatePhoto={this.props.updatePhoto}
+                        <Field name="photo" updatePhoto={this.props.updatePhoto}
                                data-multiple-caption="{count} files selected" component={file_upload} type="file"/>
                         <label htmlFor="photo">
-                            <span className={`${stl.photoName} ${stlMedia.photoName}`}>{singUp.data.photo_file_name}</span>
+                            <span
+                                className={`${stl.photoName} ${stlMedia.photoName}`}>{singUp.data.photo_file_name}</span>
                             <strong className={`${stl.buttonUpload} ${stlMedia.buttonUpload}`}><span
                                 className={`${stl.uploadText} ${stlMedia.uploadText}`}>Upload </span> <span
                                 className={`${stl.uploadIcon} ${stlMedia.uploadIcon}`}>{upload}</span> </strong>
@@ -99,15 +84,21 @@ const file_upload = ({input, type, meta: {touched, error, warning}, updatePhoto}
     delete input.value;
 
     return (
-            <input onChange={updatePhoto} id="photo" className={`${stl.inputFile} ${stlMedia.inputFile}`} {...input}
-                   type={type}/>
+        <input onChange={updatePhoto} id="photo" accept="image/jpeg"
+               className={`${stl.inputFile} ${stlMedia.inputFile}`} {...input}
+               type={type}/>
     )
 };
 
 
+const phoneMask = createTextMask({
+    pattern: '+380(99) 999 99 99',
+});
+
+
 const RegFormsRedux = reduxForm({
-    // a unique name for the form
     form: 'infoUser'
 })(RegForms);
+
 
 export default RegFormsRedux;

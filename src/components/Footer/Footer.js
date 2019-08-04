@@ -1,6 +1,6 @@
 import React from 'react';
-import './Footer.css'
-import './FooterMedia.css'
+import './Footer.css';
+import './FooterMedia.css';
 import {
     facebook,
     instagram,
@@ -92,7 +92,7 @@ class Footer extends React.Component {
             </footer>
 
         );
-    }
-}
+    };
+};
 
 export default Footer;

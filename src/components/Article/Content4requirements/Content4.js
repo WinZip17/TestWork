@@ -1,6 +1,6 @@
 import React from 'react';
-import './Content4.css'
-import './Content4Media.css'
+import './Content4.css';
+import './Content4Media.css';
 import {manLaptopV1, manLaptopV2} from "../../media/SVG";
 
 

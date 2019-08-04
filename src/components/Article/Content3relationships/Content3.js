@@ -1,6 +1,6 @@
 import React from 'react';
-import './Content3.css'
-import './Content3Media.css'
+import './Content3.css';
+import './Content3Media.css';
 
 const Content3 = () => {
     return (
