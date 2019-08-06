@@ -5,6 +5,7 @@ import UserInfoReducer from "./UserInfoReducer";
 import thunk from 'redux-thunk';
 import {reducer as formReducer} from 'redux-form';
 
+
 export let reducers = combineReducers({
     userList: UserListReducer,
     userInfo: UserInfoReducer,

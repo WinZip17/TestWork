@@ -8,37 +8,44 @@ import Successfully from "./SuccessfullyRegistered";
 import {getUsersThunkCreator} from "../../../../redux/UserListReducer";
 import RegFormsRedux from "./RegForms";
 import {API} from "../../../../API/api";
-
+import {reset} from 'redux-form'
 
 
 //окончание регестрации с высплывающим окном и очисткой стейта от данных пользователя
-export const RegistResult = (data, setIsVisible, resetList, getUsers) => {
+export const RegistResult = (setIsVisible, resetList, getUsers, accountSaveSuccess, updatePhoto) => {
 
     // сбросить стейт отображаемых людей на пустой
     resetList();
 
-    // // запросить новых людей :)
+    // запросить новых людей :)
     getUsers(1);
 
+    //очистить формы
+    accountSaveSuccess("infoUser");
+    updatePhoto("Upload your photo");
     //показать окошко с поздравлялками :)
     setIsVisible(true);
+
+
+
+
+
+
 };
 
 
 class RegFormsData extends React.Component {
 
     submit = (formData) => {
-        debugger
         formData.phone = `+380${formData.phone}`;
-        console.log(formData);
-        API.postUsers(formData, this.props.setIsVisible, this.props.resetList, this.props.getUsers, this.props.state.newUser.token);
+        API.postUsers(formData, this.props.setIsVisible, this.props.resetList, this.props.getUsers, this.props.state.newUser.token, this.props.accountSaveSuccess, this.props.updatePhoto);
 
     };
 
     componentDidUpdate(event) {
         //отоброжение выбраного файла фотки
         let fileName = this.props.state.form.infoUser;
-        if ("values" in fileName && "photo" in fileName.values && fileName.values.photo[0].name != this.props.state.newUser.photo_file_name) this.props.updatePhoto(fileName.values.photo[0].name);
+        if ("values" in fileName && "photo" in fileName.values && fileName.values.photo[0].name !== this.props.state.newUser.photo_file_name) this.props.updatePhoto(fileName.values.photo[0].name);
     };
 
 
@@ -53,7 +60,6 @@ class RegFormsData extends React.Component {
             forms={this.props.state.form}
             newUser={this.props.state.newUser}
             showPosition={this.props.showPosition}
-            // updatePhoto={this.props.updatePhoto}
             setIsVisible={this.props.setIsVisible}
             resetList={this.props.resetList}
             getUsers={this.props.getUsers}/>
@@ -68,7 +74,7 @@ let mapStateToProps = (state) => {
     }
 };
 
-//перед диспатчем валидация
+
 let mapDispatchToProps = (dispatch) => {
     return {
         getToken: () => {
@@ -78,7 +84,6 @@ let mapDispatchToProps = (dispatch) => {
             dispatch(getPositionThunkCreator());
         },
         updatePhoto: (fileName) => {
-            debugger
             dispatch(updatePhotoAC(fileName));
         },
         setIsVisible: (setIsVisible) => {
@@ -89,6 +94,9 @@ let mapDispatchToProps = (dispatch) => {
         },
         getUsers: (page) => {
             dispatch(getUsersThunkCreator(page));
+        },
+        accountSaveSuccess: (formName) => {
+            dispatch(reset(formName))
         }
     }
 };

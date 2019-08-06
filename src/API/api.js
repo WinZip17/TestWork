@@ -30,8 +30,8 @@ export const API = {
                 return response.data.token;
             })
     },
-    postUsers(data, setIsVisible, resetList, getUsers, token) {
-debugger
+    postUsers(data, setIsVisible, resetList, getUsers, token, accountSaveSuccess, updatePhoto) {
+
         let formData = new FormData();
         formData.append('position_id', data.position);
         formData.append('name', data.name);
@@ -51,7 +51,7 @@ debugger
             })
             .then(function (data) {
                 if (data.success) {
-                    RegistResult(formData, setIsVisible, resetList, getUsers)
+                    RegistResult(setIsVisible, resetList, getUsers, accountSaveSuccess, updatePhoto)
                 } else {
                     // proccess server errors
                 }

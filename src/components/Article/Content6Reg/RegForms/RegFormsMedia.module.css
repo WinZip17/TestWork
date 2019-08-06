@@ -16,7 +16,7 @@
 
     .positionShell {
         width: 345px;
-        padding: 0 13px 0 11px;
+        padding: 0 13px 0 0;
     }
 
     .photo {
@@ -60,7 +60,7 @@
     .positionShell {
         margin-bottom: 35px;
         width: 290px;
-        padding: 0 13px 0 11px;
+        padding: 0 13px 0 0;
     }
 
 

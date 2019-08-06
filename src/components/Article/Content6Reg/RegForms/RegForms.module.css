@@ -26,6 +26,7 @@ fieldset {
     height: 45px;
     color: black;
     margin-top: -3px;
+    margin-bottom: 4px;
 }
 
 .Legend {
@@ -39,7 +40,8 @@ fieldset {
 .error {
     font-size: 10pt;
     color: red;
-    margin-top: 5px;
+    margin-left: 15px;
+    position: revert ;
 }
 
 
@@ -57,7 +59,7 @@ fieldset {
     width: 450px;
     height: 55px;
     border: solid 1px #D3D3D3;
-    padding: 0 20px 0 11px;
+    padding: 0 20px 0 0;
 }
 
 .position {
@@ -67,6 +69,7 @@ fieldset {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 12pt;
     color: black;
+    padding-left: 11px;
     background: url("../../../media/icons/caret-down.svg") no-repeat right #fff;
 }
 
