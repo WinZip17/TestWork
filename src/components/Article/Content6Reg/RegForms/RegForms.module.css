@@ -19,7 +19,7 @@ fieldset {
     border-radius: 3px;
 }
 
-fieldset > input {
+.input {
     padding: 0 0 0 15px;
     border: none;
     width: 100%;
@@ -45,12 +45,12 @@ fieldset > input {
 
 /*изменение формы при ошибке*/
 .formsError {
-    border: solid 1px red;
-    color: red;
+    border: solid 1px red !important;
+    color: red !important;
 }
 
 .formsError > legend {
-    color: red;
+    color: red !important;
 }
 
 .positionShell {

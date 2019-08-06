@@ -2,28 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b31963b-b25f-404d-a87f-f7c9f3f65345" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/validation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Article/Article.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Article/Article.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Article/Content1/Content1.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Article/Content1/Content1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Article/Content2/Content2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Article/Content2/Content2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Article/Content3relationships/Content3.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Article/Content3relationships/Content3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Article/Content4requirements/Content4.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Article/Content4requirements/Content4.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Article/Content5Users/Content5.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Article/Content5Users/Content5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Article/Content5Users/UserList/UserListInfoContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Article/Content5Users/UserList/UserListInfoContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Article/Content6Reg/Content6.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Article/Content6Reg/Content6.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/API/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Article/Content6Reg/RegForms/RegForms.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Article/Content6Reg/RegForms/RegForms.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Article/Content6Reg/RegForms/RegForms.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Article/Content6Reg/RegForms/RegForms.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Article/Content6Reg/RegForms/RegFormsContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Article/Content6Reg/RegForms/RegFormsContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/UserInfo/UserInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/UserInfo/UserInfo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/UserInfo/UserInfoContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/UserInfo/UserInfoContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/ReduxStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/ReduxStore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Article/Content6Reg/RegForms/RegFormsMedia.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Article/Content6Reg/RegForms/RegFormsMedia.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/SingUpReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/SingUpReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/UserInfoReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/UserInfoReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/UserListReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/UserListReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/validation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/validation.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -39,8 +26,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Article/Content6Reg/RegForms/RegFormsContainer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="127">
+              <caret line="53" column="46" lean-forward="true" selection-start-line="53" selection-start-column="46" selection-end-line="53" selection-end-column="46" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -49,10 +36,45 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/redux/SingUpReducer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/API/api.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="263">
+              <caret line="45" column="32" lean-forward="true" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+                <element signature="e#605#738#0" />
+                <element signature="e#755#890#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Article/Content6Reg/RegForms/RegForms.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-284">
+              <caret line="37" column="53" selection-start-line="37" selection-start-column="53" selection-end-line="37" selection-end-column="53" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/validation.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="65" lean-forward="true" selection-start-line="3" selection-start-column="65" selection-end-line="3" selection-end-column="65" />
+            <state relative-caret-position="283">
+              <caret line="23" column="37" lean-forward="true" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -70,10 +92,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Cache-control</find>
-      <find>stop-color</find>
-      <find>stroke-width</find>
-      <find>stroke-linecap</find>
       <find>350</find>
       <find>width</find>
       <find>170</find>
@@ -81,7 +99,6 @@
       <find>margin</find>
       <find>455</find>
       <find>border</find>
-      <find>label</find>
       <find>alt4Content</find>
       <find>manLaptopV1</find>
       <find>line-height</find>
@@ -100,6 +117,11 @@
       <find>debugger</find>
       <find>file</find>
       <find>fileName</find>
+      <find>singUp</find>
+      <find>clearInfoUser</find>
+      <find>label</find>
+      <find>photoFileName</find>
+      <find>updatePhoto</find>
     </findStrings>
     <replaceStrings>
       <replace>menuItem</replace>
@@ -130,8 +152,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/components/Article/Content1/Content1.css" />
-        <option value="$PROJECT_DIR$/src/components/Article/Content2/Content2.css" />
         <option value="$PROJECT_DIR$/src/components/Article/Content3relationships/Content3.css" />
         <option value="$PROJECT_DIR$/src/components/Article/Content4requirements/Content4.css" />
         <option value="$PROJECT_DIR$/src/components/Article/Content5Users/Content5.css" />
@@ -154,14 +174,10 @@
         <option value="$PROJECT_DIR$/src/components/Article/Content1/Content1Media.css" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/components/Footer/FooterMedia.css" />
-        <option value="$PROJECT_DIR$/src/App.css" />
-        <option value="$PROJECT_DIR$/src/API/api.js" />
         <option value="$PROJECT_DIR$/src/components/Article/Content5Users/UserList/UserInfo/UserInfoForList.js" />
         <option value="$PROJECT_DIR$/node_modules/react-input-mask/lib/react-input-mask.production.min.js" />
         <option value="$PROJECT_DIR$/src/components/Article/Content6Reg/RegFirms/RegForms.js" />
         <option value="$PROJECT_DIR$/src/components/Article/Content6Reg/RegFirms/RegFormsContainer.js" />
-        <option value="$PROJECT_DIR$/src/components/Article/Content6Reg/RegForms/RegForms.js" />
-        <option value="$PROJECT_DIR$/src/components/Article/Content6Reg/RegForms/RegFormsContainer.js" />
         <option value="$PROJECT_DIR$/src/redux/ReduxStore.js" />
         <option value="$PROJECT_DIR$/src/components/Article/Content1/Content1.js" />
         <option value="$PROJECT_DIR$/src/components/Article/Content2/Content2.js" />
@@ -175,18 +191,24 @@
         <option value="$PROJECT_DIR$/src/components/Header/UserInfo/UserInfoContainer.js" />
         <option value="$PROJECT_DIR$/src/components/Header/UserInfo/UserInfo.js" />
         <option value="$PROJECT_DIR$/src/components/Header/Header.js" />
-        <option value="$PROJECT_DIR$/src/redux/SingUpReducer.js" />
         <option value="$PROJECT_DIR$/src/redux/UserInfoReducer.js" />
         <option value="$PROJECT_DIR$/src/redux/UserListReducer.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/App.css" />
         <option value="$PROJECT_DIR$/src/validation.js" />
+        <option value="$PROJECT_DIR$/src/API/api.js" />
+        <option value="$PROJECT_DIR$/src/components/Article/Content6Reg/RegForms/RegFormsMedia.module.css" />
+        <option value="$PROJECT_DIR$/src/components/Article/Content6Reg/RegForms/RegForms.module.css" />
+        <option value="$PROJECT_DIR$/src/components/Article/Content6Reg/RegForms/RegFormsContainer.js" />
+        <option value="$PROJECT_DIR$/src/components/Article/Content6Reg/RegForms/RegForms.js" />
+        <option value="$PROJECT_DIR$/src/redux/SingUpReducer.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="890" />
-    <option name="y" value="80" />
+    <option name="x" value="-127" />
+    <option name="y" value="167" />
     <option name="width" value="1160" />
     <option name="height" value="750" />
   </component>
@@ -209,6 +231,42 @@
               <item name="TestWork" type="b2602c69:ProjectViewProjectNode" />
               <item name="untitled1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestWork" type="b2602c69:ProjectViewProjectNode" />
+              <item name="untitled1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="API" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestWork" type="b2602c69:ProjectViewProjectNode" />
+              <item name="untitled1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestWork" type="b2602c69:ProjectViewProjectNode" />
+              <item name="untitled1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Article" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestWork" type="b2602c69:ProjectViewProjectNode" />
+              <item name="untitled1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Article" type="462c0819:PsiDirectoryNode" />
+              <item name="Content6Reg" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestWork" type="b2602c69:ProjectViewProjectNode" />
+              <item name="untitled1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Article" type="462c0819:PsiDirectoryNode" />
+              <item name="Content6Reg" type="462c0819:PsiDirectoryNode" />
+              <item name="RegForms" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -342,12 +400,13 @@
       <workItem from="1564758958118" duration="661000" />
       <workItem from="1564764377352" duration="504000" />
       <workItem from="1564855309549" duration="5469000" />
-      <workItem from="1564925222711" duration="4302000" />
+      <workItem from="1564925222711" duration="8373000" />
+      <workItem from="1565015255282" duration="16912000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="380620000" />
+    <option name="totallyTimeSpent" value="401603000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -360,22 +419,21 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.593047" visible="true" weight="0.25512227" />
       <window_info id="Structure" order="1" sideWeight="0.40695298" side_tool="true" weight="0.27561137" />
       <window_info id="npm" order="2" sideWeight="0.40695298" side_tool="true" weight="0.27561137" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49966952" weight="0.17422096" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48512888" visible="true" weight="0.20254958" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4990086" weight="0.17422096" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.483807" weight="0.20254958" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49636483" weight="0.3286119" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5148711" side_tool="true" visible="true" weight="0.20254958" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.516193" side_tool="true" visible="true" weight="0.20254958" />
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.47389293" weight="0.1855524" />
       <window_info anchor="bottom" id="TypeScript" order="11" weight="0.32945737" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -488,30 +546,10 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/Article/Content5Users/UserList/UserInfo/UserInfoForListMedia.module.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="41" column="25" selection-end-line="72" selection-end-column="1" />
-          <folding>
-            <element signature="e#13#515#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Article/Content6Reg/Content6Media.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="181">
           <caret line="43" column="25" selection-end-line="45" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Article/Content6Reg/RegForms/RegFormsMedia.module.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="102" column="5" selection-end-line="109" selection-end-column="1" />
-          <folding>
-            <element signature="e#12#578#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -650,13 +688,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Article/Content6Reg/RegForms/RegForms.module.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="74" column="1" selection-start-line="74" selection-start-column="1" selection-end-line="74" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Article/Content5Users/UserList/UserListInfo.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -664,35 +695,6 @@
           <folding>
             <element signature="e#0#26#0" expanded="true" />
             <element signature="e#556#792#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Article/Content6Reg/RegForms/RegForms.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-658">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1807">
-          <caret line="152" selection-start-line="152" selection-end-line="152" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/API/api.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-            <element signature="e#605#738#0" />
-            <element signature="e#755#890#0" />
           </folding>
         </state>
       </provider>
@@ -774,16 +776,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Article/Content6Reg/Content6.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Header/UserInfo/UserInfo.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -851,13 +843,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/redux/SingUpReducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5">
-          <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/redux/UserListReducer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1233">
@@ -894,20 +879,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Article/Content6Reg/RegForms/RegFormsContainer.js">
+    <entry file="file://$PROJECT_DIR$/src/components/Article/Content6Reg/RegForms/LegendErrors.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="85">
+          <caret line="5" column="8" lean-forward="true" selection-start-line="5" selection-start-column="8" selection-end-line="7" selection-end-column="17" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Article/Content6Reg/RegForms/RegFormsMedia.module.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Article/Content6Reg/RegForms/RegFormsContainer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="53" column="46" lean-forward="true" selection-start-line="53" selection-start-column="46" selection-end-line="53" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Article/Content6Reg/Content6.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="685">
+          <caret line="140" column="19" lean-forward="true" selection-start-line="140" selection-start-column="19" selection-end-line="140" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Article/Content6Reg/RegForms/RegForms.module.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="46" column="11" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/validation.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="65" lean-forward="true" selection-start-line="3" selection-start-column="65" selection-end-line="3" selection-end-column="65" />
+        <state relative-caret-position="283">
+          <caret line="23" column="37" lean-forward="true" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Article/Content6Reg/RegForms/RegForms.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-284">
+          <caret line="37" column="53" selection-start-line="37" selection-start-column="53" selection-end-line="37" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/API/api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="45" column="32" lean-forward="true" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+            <element signature="e#605#738#0" />
+            <element signature="e#755#890#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/redux/SingUpReducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
         </state>
       </provider>
     </entry>

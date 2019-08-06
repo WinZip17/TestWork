@@ -30,20 +30,20 @@ export const API = {
                 return response.data.token;
             })
     },
-    postUsers(singUp) {
-
+    postUsers(data, setIsVisible, resetList, getUsers, token) {
+debugger
         let formData = new FormData();
-        formData.append('position_id', singUp.data.position_id);
-        formData.append('name', singUp.data.name);
-        formData.append('email', singUp.data.email);
-        formData.append('phone', singUp.data.phone);
-        formData.append('photo', singUp.data.photo);
+        formData.append('position_id', data.position);
+        formData.append('name', data.name);
+        formData.append('email', data.email);
+        formData.append('phone', data.phone);
+        formData.append('photo', data.photo[0]);
 
         fetch('https://frontend-test-assignment-api.abz.agency/api/v1/users', {
             method: 'POST',
             body: formData,
             headers: {
-                'Token': singUp.data.token, // get token with GET api/v1/token method
+                'Token': token, // get token with GET api/v1/token method
             },
         })
             .then(function (response) {
@@ -51,7 +51,7 @@ export const API = {
             })
             .then(function (data) {
                 if (data.success) {
-                    RegistResult(formData, singUp.setIsVisible, singUp.clearInfoUser, singUp.resetList, singUp.getUsers, data)
+                    RegistResult(formData, setIsVisible, resetList, getUsers)
                 } else {
                     // proccess server errors
                 }
