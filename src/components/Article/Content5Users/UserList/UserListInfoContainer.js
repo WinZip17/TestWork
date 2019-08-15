@@ -14,13 +14,13 @@ export class UserListData extends React.Component {
     };
 
     render() {
-        return <UserListInfo userList={this.props.state.userList} showMoreUsers={this.props.showMoreUsers}/>
+        return <UserListInfo userList={this.props.userList} showMoreUsers={this.props.showMoreUsers}/>
     };
 };
 
 let mapStateToProps = (state) => {
     return {
-        state
+        userList : state.userList
     };
 };
 

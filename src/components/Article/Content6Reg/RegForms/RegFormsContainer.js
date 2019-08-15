@@ -38,14 +38,14 @@ class RegFormsData extends React.Component {
 
     submit = (formData) => {
         formData.phone = `+380${formData.phone}`;
-        API.postUsers(formData, this.props.setIsVisible, this.props.resetList, this.props.getUsers, this.props.state.newUser.token, this.props.accountSaveSuccess, this.props.updatePhoto);
+        API.postUsers(formData, this.props.setIsVisible, this.props.resetList, this.props.getUsers, this.props.newUser.token, this.props.accountSaveSuccess, this.props.updatePhoto);
 
     };
 
     componentDidUpdate(event) {
         //отоброжение выбраного файла фотки
-        let fileName = this.props.state.form.infoUser;
-        if ("values" in fileName && "photo" in fileName.values && fileName.values.photo[0].name !== this.props.state.newUser.photo_file_name) this.props.updatePhoto(fileName.values.photo[0].name);
+        let fileName = this.props.form.infoUser;
+        if ("values" in fileName && "photo" in fileName.values && fileName.values.photo[0].name !== this.props.newUser.photo_file_name) this.props.updatePhoto(fileName.values.photo[0].name);
     };
 
 
@@ -57,20 +57,22 @@ class RegFormsData extends React.Component {
     render() {
         return <div><RegFormsRedux
             onSubmit={this.submit}
-            forms={this.props.state.form}
-            newUser={this.props.state.newUser}
+            forms={this.props.form}
+            newUser={this.props.newUser}
             showPosition={this.props.showPosition}
             setIsVisible={this.props.setIsVisible}
             resetList={this.props.resetList}
             getUsers={this.props.getUsers}/>
-            {this.props.state.newUser.isVisible && <Successfully isVisible={this.props.setIsVisible}/>}
+            {this.props.newUser.isVisible && <Successfully isVisible={this.props.setIsVisible}/>}
         </div>
     }
 }
 
 let mapStateToProps = (state) => {
     return {
-        state
+        form : state.form,
+        newUser: state.newUser,
+
     }
 };
 

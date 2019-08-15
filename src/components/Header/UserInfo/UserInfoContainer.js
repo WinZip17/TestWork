@@ -13,15 +13,15 @@ class UserListData extends React.Component {
     };
 
     render() {
-        return this.props.state.userInfo.superUserInfo.position_id ?
-            <UserInfo user={this.props.state.userInfo.superUserInfo} buttonOut={this.props.buttonOut}/> : <div></div>
+        return this.props.superUserInfo.position_id ?
+            <UserInfo user={this.props.superUserInfo} buttonOut={this.props.buttonOut}/> : <div></div>
 
     };
 };
 
 let mapStateToProps = (state) => {
     return {
-        state
+        superUserInfo : state.userInfo.superUserInfo
     }
 };
 
