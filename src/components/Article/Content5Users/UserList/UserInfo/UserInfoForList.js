@@ -9,7 +9,8 @@ const UserInfoForList = (props) => {
         <div className={`${stl.user} ${stlMedia.user}`}>
             <div className={`${stl.shell} ${stlMedia.shell}`}>
                 <div className={`${stl.avatarShell} ${stlMedia.avatarShell}`}>
-                    <img className={`${stl.avatar} ${stlMedia.avatar}`} src={props.user.photo === user404? defUserFoto :  props.user.photo } alt="user logo"/>
+                    <img className={`${stl.avatar} ${stlMedia.avatar}`}
+                         src={props.user.photo === user404 ? defUserFoto : props.user.photo} alt="user logo"/>
                 </div>
                 <div className={`${stl.content} ${stlMedia.content}`}>
                     <div className={`${stl.username} ${stlMedia.username}`}>{props.user.name}</div>

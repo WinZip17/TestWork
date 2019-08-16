@@ -15,7 +15,7 @@ const RenderField = ({
             <input {...input} placeholder={label} className={stl.input} type={type}/>
 
             {touched &&
-            ((error && <span className={stl.error}>{error}</span>) )}
+            ((error && <span className={stl.error}>{error}</span>))}
         </fieldset>
 
     </div>

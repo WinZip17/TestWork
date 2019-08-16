@@ -17,7 +17,10 @@ const Content1 = () => {
                 <p className="art1Text p1 mobile">We kindly remind you that your test assignment
                     should be submitted as a link to github/bitbucket
                     repository. </p>
-                <div className="buttonPrimary buttonArt1" onClick={() => {window.location.hash="signUp"}} >Sign Up</div>
+                <div className="buttonPrimary buttonArt1" onClick={() => {
+                    window.location.hash = "signUp"
+                }}>Sign Up
+                </div>
             </div>
         </div>
     );

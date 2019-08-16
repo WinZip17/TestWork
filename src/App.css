@@ -132,7 +132,7 @@ body {
     user-select: none;
 }
 
-button[disabled=disabled], button:disabled{
+button[disabled=disabled], button:disabled {
     background-color: #D3D3D3;
     width: 290px;
     height: 40px;

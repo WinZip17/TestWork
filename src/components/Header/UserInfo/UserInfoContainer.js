@@ -21,7 +21,7 @@ class UserListData extends React.Component {
 
 let mapStateToProps = (state) => {
     return {
-        superUserInfo : state.userInfo.superUserInfo
+        superUserInfo: state.userInfo.superUserInfo
     }
 };
 

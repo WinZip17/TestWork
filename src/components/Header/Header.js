@@ -11,7 +11,9 @@ class Header extends React.Component {
                     <img className="logo" src={require("../media/logo/logo.svg")} alt="abz.agency"/>
                 </div>
                 <input type='checkbox' name="toggle" id="menu" className='toggleMenu'/>
-                <label  htmlFor='menu' className="fon"><div ></div></label>
+                <label htmlFor='menu' className="fon">
+                    <div></div>
+                </label>
                 <div className='tabletBlockMenu'>
                     <menu className="tabletMenu">
                         <li className="menuItem"><a href='#about'>About me</a></li>
@@ -24,7 +26,9 @@ class Header extends React.Component {
                     <UserInfoContainer/>
                 </div>
 
-                <label  htmlFor='menu' className="toggleMenu"> <img  className="lineMenu" src={require("../media/icons/line-menu.svg")} alt="lineMenu"/></label>
+                <label htmlFor='menu' className="toggleMenu"> <img className="lineMenu"
+                                                                   src={require("../media/icons/line-menu.svg")}
+                                                                   alt="lineMenu"/></label>
 
             </header>
         );

@@ -8,7 +8,7 @@ const Content4 = () => {
     return (
         <div id='requirements' className="backgroundAlt4">
             <div className="alt4">
-                <div  className="heading4Shell">
+                <div className="heading4Shell">
                     <h3 className="heading4">
                         General requirements for the test task
                     </h3>

@@ -12,7 +12,7 @@ const Content5 = () => {
                     <h1> Our cheerful users </h1>
                     <h2> Attention! Sorting users by registration date</h2>
                 </div>
-                 <UserListInfoContainer />
+                <UserListInfoContainer/>
             </div>
         </div>
     )

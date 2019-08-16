@@ -20,7 +20,7 @@ export class UserListData extends React.Component {
 
 let mapStateToProps = (state) => {
     return {
-        userList : state.userList
+        userList: state.userList
     };
 };
 

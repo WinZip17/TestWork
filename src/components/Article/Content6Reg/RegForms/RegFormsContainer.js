@@ -27,10 +27,6 @@ export const RegistResult = (setIsVisible, resetList, getUsers, accountSaveSucce
     setIsVisible(true);
 
 
-
-
-
-
 };
 
 
@@ -70,7 +66,7 @@ class RegFormsData extends React.Component {
 
 let mapStateToProps = (state) => {
     return {
-        form : state.form,
+        form: state.form,
         newUser: state.newUser,
 
     }

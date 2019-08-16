@@ -16,7 +16,7 @@ const RenderFileUploadField = ({
     return (
         <fieldset
             className={`${stl.photo} ${stlMedia.photo} ${props.photoFileName !== "Upload your photo" && (error && stl.formsError)}`}>
-            <input {...input} id="photo"  accept="image/jpeg"
+            <input {...input} id="photo" accept="image/jpeg"
                    className={`${stl.inputFile} ${stlMedia.inputFile}`}
                    type={type}/>
             <label htmlFor="photo">
@@ -27,7 +27,7 @@ const RenderFileUploadField = ({
                     className={`${stl.uploadIcon} ${stlMedia.uploadIcon}`}>{upload}</span> </strong>
             </label>
             {props.photoFileName !== "Upload your photo" &&
-            ((error && <span className={stl.error}>{error}</span>) )}
+            ((error && <span className={stl.error}>{error}</span>))}
             <p className={`${stl.commentPhoto} ${stlMedia.commentPhoto}`}> File format jpg up to 5 MB, the
                 minimum size of
                 70x70px</p>
